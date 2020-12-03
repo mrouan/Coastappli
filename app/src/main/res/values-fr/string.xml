@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Coastappli</string>
+    <string name="navigation_drawer_open">Ouvrir le tiroir de navigation</string>
+    <string name="navigation_drawer_close">Fermer le tiroir de navigation</string>
+    <string name="nav_header_title">Coastappli</string>
+    <string name="nav_header_subtitle">Osirisc</string>
+    <string name="nav_header_desc">Tiroir de navigation</string>
+
+    <string name="user_localisation_permission_not_granted">La localisation n\'est pas permis.</string>
+    <string name="user_localisation_permission_explanation">La localisation est impossible.</string>
+
+    <string name="menu_log_in">Connexion</string>
+    <string name="menu_carte">Carte</string>
+    <string name="menu_history">Historique</string>
+    <string name="menu_badges">Badges</string>
+    <string name="menu_manage">Paramètres</string>
+    <string name="menu_log_out">Déconnexion</string>
+    <string name="menu_profile">Profil</string>
+
+    <string name="tab_information_name">Informations</string>
+    <string name="tab_trace_name">Suivi</string>
+    <string name="tab_indicators_name">Indicateurs</string>
+    <string name="tab_input_name">Saisie</string>
+    <string name="tab_method_name">Méthode</string>
+
+    <string name="news">Actualités :</string>
+    <string name="tides">Marées :</string>
+    <string name="coastType">Types de côte :</string>
+    <string name="INEC">INEC :</string>
+
+
+    <string name="erosion">Erosion</string>
+    <string name="submersion">Submersion</string>
+
+    <string name="date">Date et heure :</string>
+    <string name="photo">Prise de photo</string>
+    <string name="indicateur_erosion_2">Mesure de distance</string>
+    <string name="indicateur_erosion_3">Mesure de hauteur</string>
+    <string name="indicateur_submersion_1">indicateur_submersion_1</string>
+    <string name="indicateur_submersion_2">indicateur_submersion_2</string>
+    <string name="indicateur_submersion_3">indicateur_submersion_3</string>
+
+    <string name="take_photo">Prendre la photo</string>
+    <string name="distance_choice">Choisir un instrument de mesure</string>
+    <string name="metre_use">Utilisation d\'un mètre</string>
+    <string name="step_use">Utilisation du \"coefficient de pas\"</string>
+    <string name="distance_measured">Distance mesurée :</string>
+    <string name="steps">pas</string>
+    <string name="step_measured">Nombre de pas mesurés :</string>
+    <string name="validate">Valider</string>
+    <string name="measureErosionPhoto">Erosion - Prise de photo</string>
+    <string name="measureErosion2">Mesure Erosion 2</string>
+    <string name="measureErosion3">Mesure Erosion 3</string>
+    <string name="measureSubmersion1">Mesure Submersion 1</string>
+    <string name="measureSubmersion2">Mesure Submersion 2</string>
+    <string name="measureSubmersion3">Mesure Submersion 3</string>
+
+    <string name="user">Utilisateur :</string>
+    <string name="measure">Mesure :</string>
+    <string name="notes">Remarques :</string>
+
+    <string name="erosionDistance">Prise de vue contrainte qualitative </string>
+    <string name="erosionSurface">Mesure de la distance du trait de côte</string>
+    <string name="erosionVolume">Pas encore implémenté</string>
+    <string name="submersionHauteur">Pas encore implémenté</string>
+    <string name="submersionMigration">Pas encore implémenté</string>
+    <string name="submersionPaquets">Pas encore implémenté</string>
+
+    <string name="methodDistanceTitle">Prise de vue contrainte\nqualitative </string>
+    <string name="methodDistanceGoalTitle">Quel est le but ?</string>
+    <string name="methodDistanceGoalMessage">→ photographier le trait de côte afin d’appréhender son évolution au fur et à mesure des photos envoyées</string>
+    <string name="methodDistanceHowTitle">Comment prendre la mesure ?</string>
+    <string name="methodDistanceHowMessage">→ outils : appareil photo</string>
+    <string name="methodDistanceWhenTitle">Quand réaliser cette méthode ?</string>
+    <string name="methodDistanceWhenMessage">→ durée : 5 minutes\n→ à faire à marée basse</string>
+    <string name="methodDistance2">- Photographie désirée:</string>
+    <string name="methodDistance3">- Position conseillée pour la prise de vue:</string>
+    <string name="methodDistance4">Pour mieux appréhender les évolutions rapides\n dues aux tempêtes, il est pertinent de réaliser\n des prises de vue post-évènement également.</string>
+
+    <string name="methodClue1">Indice 1:</string>
+    <string name="methodClue2">Indice 2:</string>
+    <string name="methodClue3">Indice 3:</string>
+
+    <string name="methodDistanceMeasureTitle">Mesure de la distance du trait de côte</string>
+    <string name="methodDistanceMeasureGoalTitle">Quel est le but ?</string>
+    <string name="methodDistanceMeasureGoalMessage">→ mesurer la distance entre deux points afin d\'appréhender l\évolution du trait de côte.</string>
+    <string name="methodDistanceMeasureHowTitle">Comment prendre la mesure ?</string>
+    <string name="methodDistanceMeasureHowMessage">→ outils : mètre ou "coefficient de pas"</string>
+    <string name="methodDistanceMeasureWhenTitle">Quand réaliser cette méthode ?</string>
+    <string name="methodDistanceMeasureWhenMessage">→ durée : 7 minutes\n → à faire à marée basse</string>
+    <string name="methodDistanceMeasureMetre">Utilisation d\'un mètre</string>
+    <string name="methodDistanceMeasureMetreExplanation">Mesurer la distance entre les deux points (voir photo ci-dessous) et l\'enregistrer dans l\'onglet \"input\".</string>
+    <string name="methodDistanceMeasureStep">Utilisation du \"coefficient de pas\"</string>
+    <string name="methodDistanceMeasureStepExplanation">→ Tout d\'abord, s\'assurer d\'avoir enregistré son\ "coefficient de pas\" dans l\'onglet \"profil\". \n Ensuite, compter le nombre de pas faits entre les deux points (voir photo ci-dessous) et l\'enregistrer dans l\'onglet \"input\".</string>
+
+
+    <string name="notImplemented">A implémenter</string>
+
+    <string name="information">Information</string>
+
+    <string name="traceTitle">Voici les dernières mesures renseignées dans ce lieu</string>
+    <string name="indicatorsErosionTitle">Voici les différentes mesures d\'érosion pouvant\nêtre prises dans ce lieu</string>
+    <string name="indicatorsSubmersionTitle">Voici les différentes mesures de submersion pouvant\nêtre prises dans ce lieu</string>
+
+    <string name="cameraIcon">L\'appareil photo est requis</string>
+    <string name="locationIcon">Un mètre est requis. Sinon, vous pouvez utiliser votre "coefficient de pas".</string>
+    <string name="meterIcon">Un mètre est requis. Sinon, vous pouvez utiliser un étalon.</string>
+    <string name="bronzeMedalIcon">Niveau débutant</string>
+    <string name="silverMedalIcon">Niveau intermédiare</string>
+    <string name="goldMedalIcon">Niveau difficile</string>
+    <string name="questionIconPhotoCapture">But : Photographier le trait de côte afin d\'appréhender son évolution au fur et à mesure des photos envoyées\n\nDurée : 5 minutes</string>
+    <string name="questionIconDistance">But : Mesurer la distance entre deux points \nafin d\'appréhender l\évolution du trait de côte.\n\nDurée : 7 minutes</string>
+</resources>
