@@ -5,7 +5,7 @@ The CoastAppli project is included in the project [OSIRISC](https://www-iuem.uni
 
 ## Getting Started
 
-This app has been developed using [*Java*](https://www.java.com/fr/). The data are stored in the [IUEM](https://www-iuem.univ-brest.fr/) servers using [MySQL](https://www.mysql.com/fr/)/[PostgreSQL](https://www.postgresql.org/).
+This app has been developed using [*Java*](https://www.java.com/fr/). The data are stored in the [IUEM](https://www-iuem.univ-brest.fr/) servers using [MySQL](https://www.mysql.com/fr/) and [PHP](https://www.php.net/).
 You will see below all the instructions needed to run the project on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ### Prerequisites
@@ -46,22 +46,6 @@ Coastappli-master/app/src/test/java/osirisc.coastappli(android Test)
 ```
 Open a test class and run the whole or a specific part by clicking on the ► in the left marge.
 
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
 ## Deployment
 
 To make the app available, export it in a signed APK version:
@@ -75,6 +59,7 @@ Then, you can download the app on the *PlayStore* with an [*Android* developer](
 ## Built With
 
 * [Android Studio](https://developer.android.com/studio) - The software used for the development
+* [WampServer](https://www.wampserver.com/en/) - The software used for the server part
 
 
 ## Authors
