@@ -70,5 +70,5 @@ Then, you can download the app on the *PlayStore* with an [*Android* developer](
 
 ## License
 
-This project is licensed under the License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the Creative Common Attribution 4.0 International Licence - see the [LICENSE.md](https://github.com/Coastappli/Coastappli/blob/master/LICENCE.md) file for details
 
