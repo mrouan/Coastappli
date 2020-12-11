@@ -37,11 +37,13 @@ public class DatabaseAssistant extends SQLiteOpenHelper {
     }
 
     /**
-     * This functions creates the 3 main tables used in the app at the moment :
+     * This functions creates the 5 main tables used in the app at the moment :
      * Marker table collects the data of each registered location.
+     *
      * MesureErosionDistance table indexes every measure of the ErosionDistance indicator
      * MethodErosionDistance table contains the required information to present the measurement protocol of
      * the indicator ErosionDistance
+     * The same tables are created for the distance measurement method.
      * We here add all the markers we need in to local database.
      * @param db
      */
@@ -52,6 +54,8 @@ public class DatabaseAssistant extends SQLiteOpenHelper {
         db.execSQL("CREATE TABLE Marker (_id INTEGER PRIMARY KEY AUTOINCREMENT, latitude DOUBLE, longitude DOUBLE, namebeach TEXT, nameTown TEXT, coastType TEXT, INEC TEXT, erosionPhotoCaptureMeasure BOOL, erosionDistanceMeasure BOOL,  photo BLOB);");
         db.execSQL("CREATE TABLE MesureErosionDistance (_id INTEGER PRIMARY KEY AUTOINCREMENT, markerLatitude DOUBLE, markerLongitude DOUBLE, date DATE, time DATE, user TEXT, note TEXT, photo BLOB);");
         db.execSQL("CREATE TABLE MethodErosionDistance (_id INTEGER PRIMARY KEY AUTOINCREMENT, markerLatitude DOUBLE, markerLongitude DOUBLE, photo BLOB, photoPerson BLOB, clue1 TEXT, clue2 TEXT, clue3 TEXT);");
+        db.execSQL("CREATE TABLE DistanceMeasure (_id INTEGER PRIMARY KEY AUTOINCREMENT, markerLatitue DOUBLE, markerLongitute DOUBLE, date DATE, time DATE, user TEXT, distance DOUBLE);");
+        db.execSQL("CREATE TABLE DistanceMethod (_id INTEGER PRIMARY KEY AUTOINCREMENT, marerLatitude DOUBLE, markerLongitude DOUBLE, photo BLOB);");
 
         //We get the bite array out of a picture of our first marker's location
         ByteArrayOutputStream stream = new ByteArrayOutputStream();
@@ -318,6 +322,26 @@ public class DatabaseAssistant extends SQLiteOpenHelper {
     }
 
     /**
+     * Functions adding a measure of the DistanceMeasurement indicator to the database
+     * @param measure
+     */
+
+    public void addDistanceMeasure (MeasureErosionDistance measure){
+        //We put all the measures values in a ContentValues object to then add the totality to the database
+        ContentValues values = new ContentValues();
+        values.put("markerLatitude", measure.getMarkerLatitude());
+        values.put("markerLongitude", measure.getMarkerLongitude());
+        values.put("date", measure.getDate());
+        values.put("time", measure.getTime());
+        values.put("user", measure.getUser());
+        values.put("measure", measure.getDistance());
+        SQLiteDatabase db = this.getWritableDatabase();
+        //We add the ContentValues object to the database : it contains every information about the measure
+        db.insert("MeasureErosionDistance", null, values);
+        db.close();
+    }
+
+    /**
      * This function is used to get MeasureErosionPhotoCapture object corresponding to a measure of ErosionDistance indicator
      * @param latitude
      * @param longitude
@@ -351,6 +375,38 @@ public class DatabaseAssistant extends SQLiteOpenHelper {
     }
 
     /**
+     * This function is used to get MeasureErosionDistance object corresponding to a measure of DistanceMeasurement indicator
+     * @param latitude
+     * @param longitude
+     * @return
+     */
+
+    public MeasureErosionDistance findDistanceMeasure(double latitude, double longitude){
+        //We select the measures corresponding to the marker's given latitude and longitude
+        String query = "Select*FROM DistanceMeasure WHERE markerLatitude =" + "'" + latitude +  "'" + "AND markerLongitude =" + "'" + longitude +  "' ORDER BY _id DESC";
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor cursor = db.rawQuery(query, null);
+        //We create a new measure of ErosionPhotoCapture
+        MeasureErosionDistance measure = new MeasureErosionDistance();
+        //If the query is not empty, we set this measure's attributes to match the first element from query
+        if (cursor.moveToFirst()) {
+            cursor.moveToFirst();
+            measure.setMarkerLatitude(Double.parseDouble(cursor.getString(1)));
+            measure.setMarkerLongitude(Double.parseDouble(cursor.getString(2)));
+            measure.setDate(cursor.getString(3));
+            measure.setTime(cursor.getString(4));
+            measure.setUser(cursor.getString(5));
+            measure.setDistance(Double.parseDouble(cursor.getString(6)));
+            cursor.close();
+            //If query is empty, then there is no measure corresponding, and the return will be null
+        } else {
+            measure = null;
+        }
+        db.close();
+        return measure;
+    }
+
+    /**
      * Functions that delete all MesureErosionDistance from the database
      */
 
@@ -369,6 +425,31 @@ public class DatabaseAssistant extends SQLiteOpenHelper {
             db.delete("MeasureErosionPhotoCapture", "markerLatitude =? and markerLongitude =?",
                     new String[] {
                             String.valueOf(measureErosionPhotoCapture.getMarkerLatitude()), String.valueOf(measureErosionPhotoCapture.getMarkerLongitude())
+                    });
+        }
+        cursor.close();
+        db.close();
+    }
+
+    /**
+     * Functions that delete all DistanceMeasure from the database
+     */
+
+    public void deleteAllDistanceMeasure() {
+        //Boolean is used to check if measures where deleted
+        boolean result = false;
+        //We select every element from the database
+        String query = "Select*FROM DistanceMeasure";
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor cursor = db.rawQuery(query, null);
+        //We pick elements one by one to delete them, as long as there are left
+        while (cursor.moveToNext()) {
+            MeasureErosionDistance measureErosionDistance = new MeasureErosionDistance();
+            measureErosionDistance.setMarkerLatitude(Double.parseDouble(cursor.getString(1)));
+            measureErosionDistance.setMarkerLongitude(Double.parseDouble(cursor.getString(2)));
+            db.delete("DistanceMeasure", "markerLatitude =? and markerLongitude =?",
+                    new String[] {
+                            String.valueOf(measureErosionDistance.getMarkerLatitude()), String.valueOf(measureErosionDistance.getMarkerLongitude())
                     });
         }
         cursor.close();
@@ -397,6 +478,23 @@ public class DatabaseAssistant extends SQLiteOpenHelper {
     }
 
     /**
+     * This functions allows us to add initial measures in the OnCreate method.
+     * At this stage, we need to give the database as a parameter as we don't want to close it at the end of the function
+     * @param method
+     * @param db
+     */
+
+    public void addInitMethodDistance(MethodErosionDistance method, SQLiteDatabase db){
+        //Storing the measure's information in a ContentValues object
+        ContentValues values = new ContentValues();
+        values.put("markerLatitude", method.getMarkerLatitude());
+        values.put("markerLongitude", method.getMarkerLongitude());
+        values.put("photo", method.getPhoto());
+        //Inserting the ContentValues object into th database
+        db.insert("MethodErosionDistance", null, values);
+    }
+
+    /**
      * Function that returns the MethodErosionPhotoCapture object corresponding to the given latitude and longitude
      * @param latitude
      * @param longitude
@@ -421,6 +519,34 @@ public class DatabaseAssistant extends SQLiteOpenHelper {
             method.setClue3(cursor.getString(7));
             cursor.close();
         //If there is no method in this location, the function will return "null"
+        } else {
+            method = null;
+        }
+        db.close();
+        return method;
+    }
+
+    /**
+     * Function that returns the MethodErosionDistance object corresponding to the given latitude and longitude
+     * @param latitude
+     * @param longitude
+     * @return
+     */
+
+    public MethodErosionDistance findMethodErosionDistance(double latitude, double longitude){
+        //We select the methods corresponding to the location
+        String query = "Select*FROM DistanceMethod WHERE markerLatitude =" + "'" + latitude +  "'" + "AND markerLongitude =" + "'" + longitude +  "' ORDER BY _id DESC";
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor cursor = db.rawQuery(query, null);
+        MethodErosionDistance method = new MethodErosionDistance();
+        //if we found one method, we provide its information do the MethodErosionPhotoCapture object we just created
+        if (cursor.moveToFirst()) {
+            cursor.moveToFirst();
+            method.setMarkerLatitude(Double.parseDouble(cursor.getString(1)));
+            method.setMarkerLongitude(Double.parseDouble(cursor.getString(2)));
+            method.setPhoto(cursor.getBlob(3));
+            cursor.close();
+            //If there is no method in this location, the function will return "null"
         } else {
             method = null;
         }

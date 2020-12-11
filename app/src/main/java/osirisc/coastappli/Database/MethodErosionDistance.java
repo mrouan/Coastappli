@@ -3,12 +3,11 @@ package osirisc.coastappli.Database;
 /**
  * This class defines the MethodErosionDistance objects, that store the necessary information for every measurement protocol
  */
-public class MethodErosionDistance {
+public class MethodErosionDistance extends Measure {
 
     private Double markerLatitude;
     private Double markerLongitude;
-    private float distance;
-    private float distancePerson;
+    private byte[] photo;
 
     /**
      * We have the 2 following constructors :
@@ -16,11 +15,10 @@ public class MethodErosionDistance {
 
     public MethodErosionDistance(){}
 
-    public MethodErosionDistance(Double markerLatitude, Double markerLongitude, float distance, float distancePerson) {
+    public MethodErosionDistance(Double markerLatitude, Double markerLongitude, byte[] photo) {
         this.markerLatitude = markerLatitude;
         this.markerLongitude = markerLongitude;
-        this.distance = distance;
-        this.distancePerson = distancePerson;
+        this.photo = photo;
 
     }
 
@@ -43,15 +41,12 @@ public class MethodErosionDistance {
 
     public void setMarkerLongitude(Double markerLongitude) { this.markerLongitude = markerLongitude; }
 
-    public float getDistance() {
-        return distance;
+    public byte[] getPhoto() {
+        return this.photo;
     }
 
-    public void setPhoto(float distance) {
-        this.distance = distance;
+    public void setPhoto(byte[] photo) {
+        this.photo = photo;
     }
 
-    public float getDistancePerson() { return distancePerson; }
-
-    public void setDistancePerson(float distancePerson) { this.distancePerson = distancePerson; }
 }

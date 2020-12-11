@@ -16,6 +16,7 @@ public abstract class Measure {
     private String time;
     private String user;
     private String notes;
+    private Double distance;
 
     /**
      * Constructor of the class
@@ -76,4 +77,8 @@ public abstract class Measure {
     public void setDate(String date) {
         this.date = date;
     }
+
+    public void setDistance(Double distance){this.distance = distance;}
+
+    public Double getDistance(){return this.distance;}
 }
