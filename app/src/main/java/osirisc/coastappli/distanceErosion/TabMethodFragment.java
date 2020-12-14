@@ -40,7 +40,7 @@ public class TabMethodFragment extends Fragment {
         // We then have to retrieve the information from the database in order to fill the layout
         // with to correct pictures and text from this marker's method
         DatabaseAssistant databaseAssistant = new DatabaseAssistant(getActivity());
-        // We retrieve the marker's latitude and longitude from the PhotoCaptureErosionMainActivity in order to find the method for this marker
+        // We retrieve the marker's latitude and longitude from the DistanceErosionMainActivity in order to find the method for this marker
         method = databaseAssistant.findMethodErosionDistance(((DistanceErosionMainActivity)getActivity()).getMarkerLatitude(), ((DistanceErosionMainActivity)getActivity()).getMarkerLongitude());
 
         if (method!=null) {

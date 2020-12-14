@@ -49,6 +49,13 @@
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
 
+        <activity
+            android:name=".DistanceErosionMainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="${applicationId}.fileprovider"

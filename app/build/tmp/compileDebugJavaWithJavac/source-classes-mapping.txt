@@ -1,0 +1,99 @@
+osirisc/coastappli/SplashScreen.java
+ osirisc.coastappli.SplashScreen
+ osirisc.coastappli.SplashScreen$1
+osirisc/coastappli/ui/badges/BadgesViewModel.java
+ osirisc.coastappli.ui.badges.BadgesViewModel
+osirisc/coastappli/location/TabInformationFragment.java
+ osirisc.coastappli.location.TabInformationFragment
+ osirisc.coastappli.location.TabInformationFragment$1
+osirisc/coastappli/location/SectionsPagerAdapterLocation.java
+ osirisc.coastappli.location.SectionsPagerAdapterLocation
+osirisc/coastappli/ui/badges/BadgesFragment.java
+ osirisc.coastappli.ui.badges.BadgesFragment
+ osirisc.coastappli.ui.badges.BadgesFragment$1
+osirisc/coastappli/Database/MeasureErosionDistance.java
+ osirisc.coastappli.Database.MeasureErosionDistance
+osirisc/coastappli/ui/profile/ProfileViewModel.java
+ osirisc.coastappli.ui.profile.ProfileViewModel
+osirisc/coastappli/ui/log_out/LogOutViewModel.java
+ osirisc.coastappli.ui.log_out.LogOutViewModel
+osirisc/coastappli/ui/history/HistoryFragment.java
+ osirisc.coastappli.ui.history.HistoryFragment
+ osirisc.coastappli.ui.history.HistoryFragment$1
+osirisc/coastappli/Database/Measure.java
+ osirisc.coastappli.Database.Measure
+osirisc/coastappli/ui/log_out/LogOutFragment.java
+ osirisc.coastappli.ui.log_out.LogOutFragment
+ osirisc.coastappli.ui.log_out.LogOutFragment$1
+osirisc/coastappli/ui/manage/ManageViewModel.java
+ osirisc.coastappli.ui.manage.ManageViewModel
+osirisc/coastappli/Database/MethodErosionPhotoCapture.java
+ osirisc.coastappli.Database.MethodErosionPhotoCapture
+osirisc/coastappli/Database/MethodErosionDistance.java
+ osirisc.coastappli.Database.MethodErosionDistance
+osirisc/coastappli/distanceErosion/TabInputFragment.java
+ osirisc.coastappli.distanceErosion.TabInputFragment
+ osirisc.coastappli.distanceErosion.TabInputFragment$1
+ osirisc.coastappli.distanceErosion.TabInputFragment$1$1
+ osirisc.coastappli.distanceErosion.TabInputFragment$2
+ osirisc.coastappli.distanceErosion.TabInputFragment$2$1
+osirisc/coastappli/ui/manage/ManageFragment.java
+ osirisc.coastappli.ui.manage.ManageFragment
+ osirisc.coastappli.ui.manage.ManageFragment$1
+osirisc/coastappli/photoCaptureErosion/TabInputFragment.java
+ osirisc.coastappli.photoCaptureErosion.TabInputFragment
+ osirisc.coastappli.photoCaptureErosion.TabInputFragment$1
+osirisc/coastappli/ui/profile/ProfileFragment.java
+ osirisc.coastappli.ui.profile.ProfileFragment
+ osirisc.coastappli.ui.profile.ProfileFragment$1
+osirisc/coastappli/ui/history/HistoryViewModel.java
+ osirisc.coastappli.ui.history.HistoryViewModel
+osirisc/coastappli/Database/MeasureErosionPhotoCapture.java
+ osirisc.coastappli.Database.MeasureErosionPhotoCapture
+osirisc/coastappli/photoCaptureErosion/SectionsPagerAdapterPhotoCaptureErosion.java
+ osirisc.coastappli.photoCaptureErosion.SectionsPagerAdapterPhotoCaptureErosion
+osirisc/coastappli/BuildConfig.java
+ osirisc.coastappli.BuildConfig
+osirisc/coastappli/Database/Marker.java
+ osirisc.coastappli.Database.Marker
+osirisc/coastappli/location/TabIndicatorsFragment.java
+ osirisc.coastappli.location.TabIndicatorsFragment
+ osirisc.coastappli.location.TabIndicatorsFragment$1
+osirisc/coastappli/ui/map/MapFragment.java
+ osirisc.coastappli.ui.map.MapFragment
+osirisc/coastappli/location/TabTraceFragment.java
+ osirisc.coastappli.location.TabTraceFragment
+ osirisc.coastappli.location.TabTraceFragment$1
+osirisc/coastappli/photoCaptureErosion/TabMethodFragment.java
+ osirisc.coastappli.photoCaptureErosion.TabMethodFragment
+ osirisc.coastappli.photoCaptureErosion.TabMethodFragment$1
+ osirisc.coastappli.photoCaptureErosion.TabMethodFragment$2
+osirisc/coastappli/MainActivity.java
+ osirisc.coastappli.MainActivity
+ osirisc.coastappli.MainActivity$1
+ osirisc.coastappli.MainActivity$1$1
+ osirisc.coastappli.MainActivity$2
+ osirisc.coastappli.MainActivity$3
+ osirisc.coastappli.MainActivity$4
+osirisc/coastappli/DistanceErosionMainActivity.java
+ osirisc.coastappli.DistanceErosionMainActivity
+osirisc/coastappli/distanceErosion/SectionsPagerAdapterDistanceErosion.java
+ osirisc.coastappli.distanceErosion.SectionsPagerAdapterDistanceErosion
+osirisc/coastappli/distanceErosion/TabMethodFragment.java
+ osirisc.coastappli.distanceErosion.TabMethodFragment
+ osirisc.coastappli.distanceErosion.TabMethodFragment$1
+osirisc/coastappli/LocationMainActivity.java
+ osirisc.coastappli.LocationMainActivity
+ osirisc.coastappli.LocationMainActivity$1
+ osirisc.coastappli.LocationMainActivity$2
+ osirisc.coastappli.LocationMainActivity$3
+ osirisc.coastappli.LocationMainActivity$4
+ osirisc.coastappli.LocationMainActivity$5
+ osirisc.coastappli.LocationMainActivity$6
+ osirisc.coastappli.LocationMainActivity$7
+ osirisc.coastappli.LocationMainActivity$8
+ osirisc.coastappli.LocationMainActivity$9
+osirisc/coastappli/PhotoCaptureErosionMainActivity.java
+ osirisc.coastappli.PhotoCaptureErosionMainActivity
+osirisc/coastappli/Database/DatabaseAssistant.java
+ osirisc.coastappli.Database.DatabaseAssistant

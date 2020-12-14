@@ -29,26 +29,26 @@ public class TabInputFragment extends Fragment {
             @NonNull LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
         // We first inflate the layout
-        final View root = inflater.inflate(R.layout.tab_input_distance_erosion, container, false);
+        final View root2 = inflater.inflate(R.layout.tab_input_distance_erosion, container, false);
 
-        RadioButton mMetre = (RadioButton) root.findViewById(R.id.metre);
-        RadioButton mSteps = (RadioButton) root.findViewById(R.id.steps);
+        RadioButton mMetre = (RadioButton) root2.findViewById(R.id.metre);
+        RadioButton mSteps = (RadioButton) root2.findViewById(R.id.steps);
 
         mMetre.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                root.findViewById(R.id.step_use).setVisibility(View.GONE);
-                root.findViewById(R.id.metre_use).setVisibility(View.VISIBLE);
-                distance = (EditText) root.findViewById(R.id.distance_metre);
+                root2.findViewById(R.id.step_use).setVisibility(View.GONE);
+                root2.findViewById(R.id.metre_use).setVisibility(View.VISIBLE);
+                distance = (EditText) root2.findViewById(R.id.distance_metre);
                 distance.addTextChangedListener(new TextWatcher() {
                     @Override
                     public void beforeTextChanged(CharSequence s, int start, int count, int after) { }
                     @Override
                     public void onTextChanged(CharSequence s, int start, int before, int count) {
                         if(s.length() != 0){
-                            root.findViewById(R.id.validate_distance).setVisibility(View.VISIBLE);
+                            root2.findViewById(R.id.validate_distance).setVisibility(View.VISIBLE);
                         }
-                        else{ root.findViewById(R.id.validate_distance).setVisibility(View.GONE);}
+                        else{ root2.findViewById(R.id.validate_distance).setVisibility(View.GONE);}
                     }
                     @Override
                     public void afterTextChanged(Editable s) { }
@@ -60,18 +60,18 @@ public class TabInputFragment extends Fragment {
         mSteps.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                root.findViewById(R.id.metre_use).setVisibility(View.GONE);
-                root.findViewById(R.id.step_use).setVisibility(View.VISIBLE);
-                steps = (EditText) root.findViewById(R.id.distance_step);
+                root2.findViewById(R.id.metre_use).setVisibility(View.GONE);
+                root2.findViewById(R.id.step_use).setVisibility(View.VISIBLE);
+                steps = (EditText) root2.findViewById(R.id.distance_step);
                 steps.addTextChangedListener(new TextWatcher() {
                     @Override
                     public void beforeTextChanged(CharSequence s, int start, int count, int after) { }
                     @Override
                     public void onTextChanged(CharSequence s, int start, int before, int count) {
                         if(s.length() != 0){
-                            root.findViewById(R.id.validate_distance).setVisibility(View.VISIBLE);
+                            root2.findViewById(R.id.validate_distance).setVisibility(View.VISIBLE);
                         }
-                        else{ root.findViewById(R.id.validate_distance).setVisibility(View.GONE);}
+                        else{ root2.findViewById(R.id.validate_distance).setVisibility(View.GONE);}
                     }
                     @Override
                     public void afterTextChanged(Editable s) { }
@@ -79,7 +79,7 @@ public class TabInputFragment extends Fragment {
             }
         });
 
-        return root;
+        return root2;
     }
 
 }

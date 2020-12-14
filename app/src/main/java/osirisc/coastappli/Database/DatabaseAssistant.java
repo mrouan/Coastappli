@@ -55,7 +55,7 @@ public class DatabaseAssistant extends SQLiteOpenHelper {
         db.execSQL("CREATE TABLE MesureErosionDistance (_id INTEGER PRIMARY KEY AUTOINCREMENT, markerLatitude DOUBLE, markerLongitude DOUBLE, date DATE, time DATE, user TEXT, note TEXT, photo BLOB);");
         db.execSQL("CREATE TABLE MethodErosionDistance (_id INTEGER PRIMARY KEY AUTOINCREMENT, markerLatitude DOUBLE, markerLongitude DOUBLE, photo BLOB, photoPerson BLOB, clue1 TEXT, clue2 TEXT, clue3 TEXT);");
         db.execSQL("CREATE TABLE DistanceMeasure (_id INTEGER PRIMARY KEY AUTOINCREMENT, markerLatitue DOUBLE, markerLongitute DOUBLE, date DATE, time DATE, user TEXT, distance DOUBLE);");
-        db.execSQL("CREATE TABLE DistanceMethod (_id INTEGER PRIMARY KEY AUTOINCREMENT, marerLatitude DOUBLE, markerLongitude DOUBLE, photo BLOB);");
+        db.execSQL("CREATE TABLE DistanceMethod (_id INTEGER PRIMARY KEY AUTOINCREMENT, markerLatitude DOUBLE, markerLongitude DOUBLE, photo BLOB);");
 
         //We get the bite array out of a picture of our first marker's location
         ByteArrayOutputStream stream = new ByteArrayOutputStream();
@@ -80,6 +80,9 @@ public class DatabaseAssistant extends SQLiteOpenHelper {
         MethodErosionPhotoCapture method = new MethodErosionPhotoCapture(48.3549,-4.5671, byteArrayPhoto, byteArrayPhotoPerson, "Clocher dans le coin gauche", "Arbre aligné avec le centre", "Ne pas trop voir le ciel");
         //And we add it to the table
         addInitMethodErosionDistance(method, db);
+        //we do the same for the DistanceMeasurement method
+        MethodErosionDistance method2 = new MethodErosionDistance(48.3549,-4.5671, byteArrayPhoto);
+        addInitMethodDistance(method2, db);
     }
 
     /**
@@ -337,7 +340,7 @@ public class DatabaseAssistant extends SQLiteOpenHelper {
         values.put("measure", measure.getDistance());
         SQLiteDatabase db = this.getWritableDatabase();
         //We add the ContentValues object to the database : it contains every information about the measure
-        db.insert("MeasureErosionDistance", null, values);
+        db.insert("DistanceMeasure", null, values);
         db.close();
     }
 
@@ -383,7 +386,7 @@ public class DatabaseAssistant extends SQLiteOpenHelper {
 
     public MeasureErosionDistance findDistanceMeasure(double latitude, double longitude){
         //We select the measures corresponding to the marker's given latitude and longitude
-        String query = "Select*FROM DistanceMeasure WHERE markerLatitude =" + "'" + latitude +  "'" + "AND markerLongitude =" + "'" + longitude +  "' ORDER BY _id DESC";
+        String query = "Select * FROM DistanceMeasure WHERE markerLatitude =" + "'" + latitude +  "'" + "AND markerLongitude =" + "'" + longitude +  "' ORDER BY _id DESC";
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor cursor = db.rawQuery(query, null);
         //We create a new measure of ErosionPhotoCapture
@@ -491,7 +494,7 @@ public class DatabaseAssistant extends SQLiteOpenHelper {
         values.put("markerLongitude", method.getMarkerLongitude());
         values.put("photo", method.getPhoto());
         //Inserting the ContentValues object into th database
-        db.insert("MethodErosionDistance", null, values);
+        db.insert("DistanceMethod", null, values);
     }
 
     /**
