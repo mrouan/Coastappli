@@ -37,17 +37,18 @@ public class TabMethodFragment extends Fragment {
         // We first inflate the layout
         View root = inflater.inflate(R.layout.tab_method_distance_erosion, container, false);
 
+
         // We then have to retrieve the information from the database in order to fill the layout
         // with to correct pictures and text from this marker's method
-        DatabaseAssistant databaseAssistant = new DatabaseAssistant(getActivity());
+        //DatabaseAssistant databaseAssistant = new DatabaseAssistant(getActivity());
         // We retrieve the marker's latitude and longitude from the DistanceErosionMainActivity in order to find the method for this marker
-        method = databaseAssistant.findMethodErosionDistance(((DistanceErosionMainActivity)getActivity()).getMarkerLatitude(), ((DistanceErosionMainActivity)getActivity()).getMarkerLongitude());
+        //method = databaseAssistant.findMethodErosionDistance(((DistanceErosionMainActivity)getActivity()).getMarkerLatitude(), ((DistanceErosionMainActivity)getActivity()).getMarkerLongitude());
 
-        if (method!=null) {
+        //if (method!=null) {
             // We fill the layout
-            ImageView imageViewMethodPhoto = root.findViewById(R.id.imageViewMethodPhoto);
-            imageViewMethodPhoto.setImageBitmap(BitmapFactory.decodeByteArray(method.getPhoto(), 0,method.getPhoto().length));
-        }
+        ImageView imageViewMethodPhoto = root.findViewById(R.id.imageMethodDistance);
+            //imageViewMethodPhoto.setImageBitmap(BitmapFactory.decodeByteArray(method.getPhoto(), 0,method.getPhoto().length));
+        //}
         return root;
     }
 
@@ -62,7 +63,7 @@ public class TabMethodFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
 
         // We retrieve the first image view
-        final ImageView imageViewMethodPhoto = getView().findViewById(R.id.imageViewMethodPhoto);
+        final ImageView imageViewMethodPhoto = getView().findViewById(R.id.imageMethodDistance);
 
         // We set a onclick listener for when the image gets clicked
         imageViewMethodPhoto.setOnClickListener(new View.OnClickListener() {

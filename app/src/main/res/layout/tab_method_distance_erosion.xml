@@ -55,12 +55,14 @@
                 android:layout_height="wrap_content"
                 android:text="@string/methodDistanceMeasureHowMessage"
                 android:paddingBottom="10dp"/>
+
             <TextView
                 android:id="@+id/textViewMethodDistanceMeasureWhenTitle"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp"
                 android:text="@string/methodDistanceMeasureWhenTitle"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
             <TextView
                 android:id="@+id/textViewMethodDistanceMeasureWhenMessage"
                 android:layout_width="match_parent"
@@ -83,6 +85,8 @@
                 android:text="@string/methodDistanceMeasureMetreExplanation"
                 android:paddingBottom="10dp"/>
 
+
+
             <TextView
                 android:id="@+id/textViewMethodDistanceMeasureStep"
                 android:layout_width="match_parent"
@@ -95,17 +99,14 @@
                 android:id="@+id/textViewMethodDistanceMeasureStepExplanation"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/methodDistanceMeasureStepExplanation"
-                android:paddingBottom="10dp"/>
+                android:paddingBottom="10dp"
+                android:text="@string/methodDistanceMeasureStepExplanation" />
 
             <ImageView
-                android:id="@+id/imageViewMethodPhoto"
-                android:layout_width="match_parent"
+                android:id="@+id/imageMethodDistance"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                tools:srcCompat="@mipmap/ic_launcher_coast" />
-
-
+                app:srcCompat="@drawable/distance_example" />
 
         </LinearLayout>
     </ScrollView>

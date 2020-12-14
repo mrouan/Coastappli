@@ -63,7 +63,6 @@ public class DatabaseAssistant extends SQLiteOpenHelper {
         ((BitmapDrawable)ContextCompat.getDrawable(getApplicationContext(), R.drawable.le_dellec)).getBitmap().compress(Bitmap.CompressFormat.PNG, 100, stream);
         byte[] byteArray = stream.toByteArray();
         //We now create this marker
-
         Marker marker = new Marker(48.3549,-4.5671,  "Le Dellec", "Plouzané", "Type de côte", "INEC", 1, 1, byteArray);
         //We can create as many markers as we want :
         Marker marker1 = new Marker(47.3549, -5.671, "Test2", "Test2", "Test2", "Test2", 0,0);
@@ -84,7 +83,10 @@ public class DatabaseAssistant extends SQLiteOpenHelper {
         //And we add it to the table
         addInitMethodErosionDistance(method, db);
         //we do the same for the DistanceMeasurement method
-        MethodErosionDistance method2 = new MethodErosionDistance(48.3549,-4.5671, byteArrayPhoto);
+        ByteArrayOutputStream streamD = new ByteArrayOutputStream();
+        ((BitmapDrawable)ContextCompat.getDrawable(getApplicationContext(), R.drawable.distance_example)).getBitmap().compress(Bitmap.CompressFormat.PNG, 100, streamD);
+        byte[] byteArrayD = streamD.toByteArray();
+        MethodErosionDistance method2 = new MethodErosionDistance(48.3549,-4.5671, byteArrayD);
         addInitMethodDistance(method2, db);
     }
 
@@ -129,6 +131,7 @@ public class DatabaseAssistant extends SQLiteOpenHelper {
             marker.setCoastType(cursor.getString(5));
             marker.setINEC(cursor.getString(6));
             marker.setErosionMeasurePhotoCapture(Integer.parseInt(cursor.getString(7)));
+            //marker.setErosionMeasureDistance(Integer.parseInt(cursor.getString(8)));
             marker.setPhoto(cursor.getBlob(8));
             listMarker.add(marker);
         }
@@ -161,6 +164,7 @@ public class DatabaseAssistant extends SQLiteOpenHelper {
             marker.setCoastType(cursor.getString(5));
             marker.setINEC(cursor.getString(6));
             marker.setErosionMeasurePhotoCapture(Integer.parseInt(cursor.getString(7)));
+            //marker.setErosionMeasureDistance(Integer.parseInt(cursor.getString(8)));
             marker.setPhoto(cursor.getBlob(8));
             cursor.close();
         //If query is empty, there's no corresponding marker so we set i to null
@@ -188,7 +192,7 @@ public class DatabaseAssistant extends SQLiteOpenHelper {
         values.put("coastType", marker.getCoastType());
         values.put("INEC", marker.getINEC());
         values.put("erosionPhotoCaptureMeasure", marker.getErosionMeasurePhotoCapture());
-        values.put("erosionDistanceMeasure", marker.getErosionDistanceMesureBool());
+        values.put("erosionDistanceMeasure", marker.getErosionDistanceMeasureBool());
 
         values.put("photo", marker.getPhoto());
         SQLiteDatabase db = this.getWritableDatabase();
@@ -394,7 +398,7 @@ public class DatabaseAssistant extends SQLiteOpenHelper {
         String query = "Select * FROM DistanceMeasure WHERE markerLatitude =" + "'" + latitude +  "'" + "AND markerLongitude =" + "'" + longitude +  "' ORDER BY _id DESC";
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor cursor = db.rawQuery(query, null);
-        //We create a new measure of ErosionPhotoCapture
+        //We create a new measure of ErosionDistance
         MeasureErosionDistance measure = new MeasureErosionDistance();
         //If the query is not empty, we set this measure's attributes to match the first element from query
         if (cursor.moveToFirst()) {

@@ -16,168 +16,235 @@
 12    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- necessary to use OpenStreetMap -->
 12-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:5:5-79
 12-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:5:22-76
-13    <uses-feature
-13-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:6:5-84
-14        android:name="android.hardware.camera"
-14-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:6:19-57
-15        android:required="true" />
-15-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:6:58-81
-16    <uses-feature
-16-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.5.0] C:\Users\Justine\.gradle\caches\transforms-2\files-2.1\43ea58c52a7a2de8eb48ee63cb0061a2\jetified-mapbox-android-sdk-8.5.0\AndroidManifest.xml:9:5-11:35
-17        android:glEsVersion="0x00020000"
-17-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.5.0] C:\Users\Justine\.gradle\caches\transforms-2\files-2.1\43ea58c52a7a2de8eb48ee63cb0061a2\jetified-mapbox-android-sdk-8.5.0\AndroidManifest.xml:10:9-41
-18        android:required="true" />
-18-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.5.0] C:\Users\Justine\.gradle\caches\transforms-2\files-2.1\43ea58c52a7a2de8eb48ee63cb0061a2\jetified-mapbox-android-sdk-8.5.0\AndroidManifest.xml:11:9-32
-19    <uses-feature
-19-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.5.0] C:\Users\Justine\.gradle\caches\transforms-2\files-2.1\43ea58c52a7a2de8eb48ee63cb0061a2\jetified-mapbox-android-sdk-8.5.0\AndroidManifest.xml:12:5-14:36
-20        android:name="android.hardware.wifi"
-20-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.5.0] C:\Users\Justine\.gradle\caches\transforms-2\files-2.1\43ea58c52a7a2de8eb48ee63cb0061a2\jetified-mapbox-android-sdk-8.5.0\AndroidManifest.xml:13:9-45
-21        android:required="false" />
-21-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.5.0] C:\Users\Justine\.gradle\caches\transforms-2\files-2.1\43ea58c52a7a2de8eb48ee63cb0061a2\jetified-mapbox-android-sdk-8.5.0\AndroidManifest.xml:14:9-33
-22
-23    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-23-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.5.0] C:\Users\Justine\.gradle\caches\transforms-2\files-2.1\43ea58c52a7a2de8eb48ee63cb0061a2\jetified-mapbox-android-sdk-8.5.0\AndroidManifest.xml:17:5-79
-23-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.5.0] C:\Users\Justine\.gradle\caches\transforms-2\files-2.1\43ea58c52a7a2de8eb48ee63cb0061a2\jetified-mapbox-android-sdk-8.5.0\AndroidManifest.xml:17:22-76
-24    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- Required for CrashReporterJobIntentService on API levels below 25 -->
-24-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.5.0] C:\Users\Justine\.gradle\caches\transforms-2\files-2.1\43ea58c52a7a2de8eb48ee63cb0061a2\jetified-mapbox-android-sdk-8.5.0\AndroidManifest.xml:18:5-76
-24-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.5.0] C:\Users\Justine\.gradle\caches\transforms-2\files-2.1\43ea58c52a7a2de8eb48ee63cb0061a2\jetified-mapbox-android-sdk-8.5.0\AndroidManifest.xml:18:22-73
-25    <uses-permission android:name="android.permission.WAKE_LOCK" />
-25-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\Justine\.gradle\caches\transforms-2\files-2.1\028e8c2f6a0301c6aaea09e117c172d5\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:12:5-68
-25-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\Justine\.gradle\caches\transforms-2\files-2.1\028e8c2f6a0301c6aaea09e117c172d5\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:12:22-65
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:6:5-79
+13-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:6:22-76
+14    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+14-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:7:5-81
+14-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:7:22-78
+15    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+15-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:8:5-80
+15-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:8:22-77
+16
+17    <uses-feature
+17-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:9:5-84
+18        android:name="android.hardware.camera"
+18-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:9:19-57
+19        android:required="true" />
+19-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:9:58-81
+20    <uses-feature
+20-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.5.0] C:\Users\Justine\.gradle\caches\transforms-2\files-2.1\43ea58c52a7a2de8eb48ee63cb0061a2\jetified-mapbox-android-sdk-8.5.0\AndroidManifest.xml:9:5-11:35
+21        android:glEsVersion="0x00020000"
+21-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.5.0] C:\Users\Justine\.gradle\caches\transforms-2\files-2.1\43ea58c52a7a2de8eb48ee63cb0061a2\jetified-mapbox-android-sdk-8.5.0\AndroidManifest.xml:10:9-41
+22        android:required="true" />
+22-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.5.0] C:\Users\Justine\.gradle\caches\transforms-2\files-2.1\43ea58c52a7a2de8eb48ee63cb0061a2\jetified-mapbox-android-sdk-8.5.0\AndroidManifest.xml:11:9-32
+23    <uses-feature
+23-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.5.0] C:\Users\Justine\.gradle\caches\transforms-2\files-2.1\43ea58c52a7a2de8eb48ee63cb0061a2\jetified-mapbox-android-sdk-8.5.0\AndroidManifest.xml:12:5-14:36
+24        android:name="android.hardware.wifi"
+24-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.5.0] C:\Users\Justine\.gradle\caches\transforms-2\files-2.1\43ea58c52a7a2de8eb48ee63cb0061a2\jetified-mapbox-android-sdk-8.5.0\AndroidManifest.xml:13:9-45
+25        android:required="false" />
+25-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.5.0] C:\Users\Justine\.gradle\caches\transforms-2\files-2.1\43ea58c52a7a2de8eb48ee63cb0061a2\jetified-mapbox-android-sdk-8.5.0\AndroidManifest.xml:14:9-33
 26
-27    <application
-27-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:9:5-69:19
-28        android:allowBackup="false"
-28-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:11:9-36
-29        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-29-->[androidx.core:core:1.0.1] C:\Users\Justine\.gradle\caches\transforms-2\files-2.1\3d8f3aa9beec41485ddddd4268fa3ba8\core-1.0.1\AndroidManifest.xml:22:18-86
-30        android:debuggable="true"
-31        android:extractNativeLibs="false"
-32        android:fullBackupContent="true"
-32-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:10:9-41
-33        android:fullBackupOnly="false"
-33-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:12:9-39
-34        android:icon="@mipmap/ic_launcher_coast"
-34-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:13:9-49
-35        android:label="@string/app_name"
-35-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:14:9-41
-36        android:roundIcon="@mipmap/ic_launcher_coast_round"
-36-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:15:9-60
-37        android:supportsRtl="true"
-37-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:16:9-35
-38        android:testOnly="true"
-39        android:theme="@style/AppTheme" >
-39-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:17:9-40
-40        <activity
-40-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:18:9-28:20
-41            android:name="osirisc.coastappli.MainActivity"
-41-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:19:13-41
-42            android:label="@string/app_name"
-42-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:20:13-45
-43            android:screenOrientation="portrait"
-43-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:21:13-49
-44            android:theme="@style/AppTheme.NoActionBar" >
-44-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:22:13-56
-45            <intent-filter>
-45-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:23:13-27:29
-46                <action android:name="android.intent.action.MAIN" />
-46-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:24:17-69
-46-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:24:25-66
-47
-48                <category android:name="android.intent.category.LAUNCHER" />
-48-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:26:17-77
-48-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:26:27-74
-49            </intent-filter>
-50        </activity>
-51        <activity
-51-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:31:9-36:20
-52            android:name="osirisc.coastappli.SplashScreen"
-52-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:32:13-41
-53            android:label="@string/app_name"
-53-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:33:13-45
-54            android:screenOrientation="portrait"
-54-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:34:13-49
-55            android:theme="@style/AppTheme.NoActionBar" >
-55-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:35:13-56
-56        </activity>
-57        <activity
-57-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:38:9-43:20
-58            android:name="osirisc.coastappli.LocationMainActivity"
-58-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:39:13-49
-59            android:label="@string/app_name"
-59-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:40:13-45
-60            android:screenOrientation="portrait"
-60-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:41:13-49
-61            android:theme="@style/AppTheme.NoActionBar" >
-61-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:42:13-56
-62        </activity>
-63        <activity
-63-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:45:9-50:20
-64            android:name="osirisc.coastappli.PhotoCaptureErosionMainActivity"
-64-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:46:13-60
-65            android:label="@string/app_name"
-65-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:47:13-45
-66            android:screenOrientation="portrait"
-66-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:48:13-49
-67            android:theme="@style/AppTheme.NoActionBar" >
-67-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:49:13-56
-68        </activity>
-69        <activity
-69-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:52:9-57:20
-70            android:name="osirisc.coastappli.DistanceErosionMainActivity"
-70-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:53:13-56
-71            android:label="@string/app_name"
-71-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:54:13-45
-72            android:screenOrientation="portrait"
-72-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:55:13-49
-73            android:theme="@style/AppTheme.NoActionBar" >
-73-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:56:13-56
+27    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- Required for CrashReporterJobIntentService on API levels below 25 -->
+27-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.5.0] C:\Users\Justine\.gradle\caches\transforms-2\files-2.1\43ea58c52a7a2de8eb48ee63cb0061a2\jetified-mapbox-android-sdk-8.5.0\AndroidManifest.xml:18:5-76
+27-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.5.0] C:\Users\Justine\.gradle\caches\transforms-2\files-2.1\43ea58c52a7a2de8eb48ee63cb0061a2\jetified-mapbox-android-sdk-8.5.0\AndroidManifest.xml:18:22-73
+28    <uses-permission android:name="android.permission.WAKE_LOCK" />
+28-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\Justine\.gradle\caches\transforms-2\files-2.1\028e8c2f6a0301c6aaea09e117c172d5\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:12:5-68
+28-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\Justine\.gradle\caches\transforms-2\files-2.1\028e8c2f6a0301c6aaea09e117c172d5\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:12:22-65
+29
+30    <application
+30-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:12:5-106:19
+31        android:allowBackup="false"
+31-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:14:9-36
+32        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+32-->[androidx.core:core:1.1.0] C:\Users\Justine\.gradle\caches\transforms-2\files-2.1\73530a2d0c1df4b3085807c82555ce12\core-1.1.0\AndroidManifest.xml:24:18-86
+33        android:debuggable="true"
+34        android:extractNativeLibs="false"
+35        android:fullBackupContent="true"
+35-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:13:9-41
+36        android:fullBackupOnly="false"
+36-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:15:9-39
+37        android:icon="@mipmap/ic_launcher_coast"
+37-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:16:9-49
+38        android:label="@string/app_name"
+38-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:17:9-41
+39        android:roundIcon="@mipmap/ic_launcher_coast_round"
+39-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:18:9-60
+40        android:supportsRtl="true"
+40-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:19:9-35
+41        android:testOnly="true"
+42        android:theme="@style/AppTheme" >
+42-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:20:9-40
+43        <activity
+43-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:21:9-31:20
+44            android:name="osirisc.coastappli.MainActivity"
+44-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:22:13-41
+45            android:label="@string/app_name"
+45-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:23:13-45
+46            android:screenOrientation="portrait"
+46-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:24:13-49
+47            android:theme="@style/AppTheme.NoActionBar" >
+47-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:25:13-56
+48            <intent-filter>
+48-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:26:13-30:29
+49                <action android:name="android.intent.action.MAIN" />
+49-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:27:17-69
+49-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:27:25-66
+50
+51                <category android:name="android.intent.category.LAUNCHER" />
+51-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:29:17-77
+51-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:29:27-74
+52            </intent-filter>
+53        </activity>
+54        <activity
+54-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:34:9-39:20
+55            android:name="osirisc.coastappli.SplashScreen"
+55-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:35:13-41
+56            android:label="@string/app_name"
+56-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:36:13-45
+57            android:screenOrientation="portrait"
+57-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:37:13-49
+58            android:theme="@style/AppTheme.NoActionBar" >
+58-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:38:13-56
+59        </activity>
+60        <activity
+60-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:41:9-46:20
+61            android:name="osirisc.coastappli.LocationMainActivity"
+61-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:42:13-49
+62            android:label="@string/app_name"
+62-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:43:13-45
+63            android:screenOrientation="portrait"
+63-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:44:13-49
+64            android:theme="@style/AppTheme.NoActionBar" >
+64-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:45:13-56
+65        </activity>
+66        <activity
+66-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:47:9-54:20
+67            android:name="osirisc.coastappli.LoginActivity"
+67-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:48:13-42
+68            android:label="@string/app_name" >
+68-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:49:13-45
+69            <intent-filter>
+69-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:26:13-30:29
+70                <action android:name="android.intent.action.MAIN" />
+70-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:27:17-69
+70-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:27:25-66
+71
+72                <category android:name="android.intent.category.LAUNCHER" />
+72-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:29:17-77
+72-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:29:27-74
+73            </intent-filter>
 74        </activity>
-75
-76        <provider
-77            android:name="androidx.core.content.FileProvider"
-77-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:60:13-62
-78            android:authorities="osirisc.coastappli.fileprovider"
-78-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:61:13-64
-79            android:exported="false"
-79-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:62:13-37
-80            android:grantUriPermissions="true" >
-80-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:63:13-47
-81            <meta-data
-81-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:64:13-66:54
-82                android:name="android.support.FILE_PROVIDER_PATHS"
-82-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:65:17-67
-83                android:resource="@xml/file_paths" />
-83-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:66:17-51
-84        </provider>
-85        <provider
-85-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\Justine\.gradle\caches\transforms-2\files-2.1\028e8c2f6a0301c6aaea09e117c172d5\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:19:9-23:39
-86            android:name="com.mapbox.android.telemetry.provider.MapboxTelemetryInitProvider"
-86-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\Justine\.gradle\caches\transforms-2\files-2.1\028e8c2f6a0301c6aaea09e117c172d5\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:20:13-93
-87            android:authorities="osirisc.coastappli.mapboxtelemetryinitprovider"
-87-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\Justine\.gradle\caches\transforms-2\files-2.1\028e8c2f6a0301c6aaea09e117c172d5\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:21:13-79
-88            android:exported="false"
-88-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\Justine\.gradle\caches\transforms-2\files-2.1\028e8c2f6a0301c6aaea09e117c172d5\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:22:13-37
-89            android:initOrder="100" />
-89-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\Justine\.gradle\caches\transforms-2\files-2.1\028e8c2f6a0301c6aaea09e117c172d5\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:23:13-36
-90
-91        <service
-91-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\Justine\.gradle\caches\transforms-2\files-2.1\028e8c2f6a0301c6aaea09e117c172d5\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:25:9-27:72
-92            android:name="com.mapbox.android.telemetry.crash.CrashReporterJobIntentService"
-92-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\Justine\.gradle\caches\transforms-2\files-2.1\028e8c2f6a0301c6aaea09e117c172d5\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:26:13-92
-93            android:permission="android.permission.BIND_JOB_SERVICE" />
-93-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\Justine\.gradle\caches\transforms-2\files-2.1\028e8c2f6a0301c6aaea09e117c172d5\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:27:13-69
-94
-95        <provider
-95-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Justine\.gradle\caches\transforms-2\files-2.1\54bc6b25b90e418ba885581f48acd276\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:23:9-27:43
-96            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-96-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Justine\.gradle\caches\transforms-2\files-2.1\54bc6b25b90e418ba885581f48acd276\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:24:13-79
-97            android:authorities="osirisc.coastappli.lifecycle-process"
-97-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Justine\.gradle\caches\transforms-2\files-2.1\54bc6b25b90e418ba885581f48acd276\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:25:13-69
-98            android:exported="false"
-98-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Justine\.gradle\caches\transforms-2\files-2.1\54bc6b25b90e418ba885581f48acd276\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:26:13-37
-99            android:multiprocess="true" />
-99-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Justine\.gradle\caches\transforms-2\files-2.1\54bc6b25b90e418ba885581f48acd276\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:27:13-40
-100    </application>
-101
-102</manifest>
+75        <activity
+75-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:56:9-60:20
+76            android:name="osirisc.coastappli.HomeActivity"
+76-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:57:13-41
+77            android:label="@string/app_name"
+77-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:58:13-45
+78            android:screenOrientation="portrait" >
+78-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:59:13-49
+79        </activity>
+80        <activity
+80-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:62:9-70:20
+81            android:name="osirisc.coastappli.RegisterActivity"
+81-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:63:13-45
+82            android:label="@string/app_name"
+82-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:64:13-45
+83            android:parentActivityName="osirisc.coastappli.LoginActivity"
+83-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:65:13-56
+84            android:screenOrientation="portrait" >
+84-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:66:13-49
+85            <meta-data
+85-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:67:13-69:50
+86                android:name="android.support.PARENT_ACTIVITY"
+86-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:68:17-63
+87                android:value=".LoginActivity" />
+87-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:69:17-47
+88        </activity>
+89        <activity
+89-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:72:9-80:20
+90            android:name="osirisc.coastappli.EmailVerify"
+90-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:73:13-40
+91            android:label="@string/app_name"
+91-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:74:13-45
+92            android:parentActivityName="osirisc.coastappli.LoginActivity"
+92-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:75:13-56
+93            android:screenOrientation="portrait" >
+93-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:76:13-49
+94            <meta-data
+94-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:67:13-69:50
+95                android:name="android.support.PARENT_ACTIVITY"
+95-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:68:17-63
+96                android:value=".LoginActivity" />
+96-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:69:17-47
+97        </activity>
+98        <activity
+98-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:82:9-87:20
+99            android:name="osirisc.coastappli.PhotoCaptureErosionMainActivity"
+99-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:83:13-60
+100            android:label="@string/app_name"
+100-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:84:13-45
+101            android:screenOrientation="portrait"
+101-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:85:13-49
+102            android:theme="@style/AppTheme.NoActionBar" >
+102-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:86:13-56
+103        </activity>
+104        <activity
+104-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:89:9-94:20
+105            android:name="osirisc.coastappli.DistanceErosionMainActivity"
+105-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:90:13-56
+106            android:label="@string/app_name"
+106-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:91:13-45
+107            android:screenOrientation="portrait"
+107-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:92:13-49
+108            android:theme="@style/AppTheme.NoActionBar" >
+108-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:93:13-56
+109        </activity>
+110
+111        <provider
+112            android:name="androidx.core.content.FileProvider"
+112-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:97:13-62
+113            android:authorities="osirisc.coastappli.fileprovider"
+113-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:98:13-64
+114            android:exported="false"
+114-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:99:13-37
+115            android:grantUriPermissions="true" >
+115-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:100:13-47
+116            <meta-data
+116-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:101:13-103:54
+117                android:name="android.support.FILE_PROVIDER_PATHS"
+117-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:102:17-67
+118                android:resource="@xml/file_paths" />
+118-->D:\Documents\Android\Coastappli-master\app\src\main\AndroidManifest.xml:103:17-51
+119        </provider>
+120        <provider
+120-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\Justine\.gradle\caches\transforms-2\files-2.1\028e8c2f6a0301c6aaea09e117c172d5\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:19:9-23:39
+121            android:name="com.mapbox.android.telemetry.provider.MapboxTelemetryInitProvider"
+121-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\Justine\.gradle\caches\transforms-2\files-2.1\028e8c2f6a0301c6aaea09e117c172d5\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:20:13-93
+122            android:authorities="osirisc.coastappli.mapboxtelemetryinitprovider"
+122-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\Justine\.gradle\caches\transforms-2\files-2.1\028e8c2f6a0301c6aaea09e117c172d5\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:21:13-79
+123            android:exported="false"
+123-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\Justine\.gradle\caches\transforms-2\files-2.1\028e8c2f6a0301c6aaea09e117c172d5\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:22:13-37
+124            android:initOrder="100" />
+124-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\Justine\.gradle\caches\transforms-2\files-2.1\028e8c2f6a0301c6aaea09e117c172d5\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:23:13-36
+125
+126        <service
+126-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\Justine\.gradle\caches\transforms-2\files-2.1\028e8c2f6a0301c6aaea09e117c172d5\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:25:9-27:72
+127            android:name="com.mapbox.android.telemetry.crash.CrashReporterJobIntentService"
+127-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\Justine\.gradle\caches\transforms-2\files-2.1\028e8c2f6a0301c6aaea09e117c172d5\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:26:13-92
+128            android:permission="android.permission.BIND_JOB_SERVICE" />
+128-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\Justine\.gradle\caches\transforms-2\files-2.1\028e8c2f6a0301c6aaea09e117c172d5\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:27:13-69
+129
+130        <provider
+130-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Justine\.gradle\caches\transforms-2\files-2.1\54bc6b25b90e418ba885581f48acd276\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:23:9-27:43
+131            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+131-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Justine\.gradle\caches\transforms-2\files-2.1\54bc6b25b90e418ba885581f48acd276\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:24:13-79
+132            android:authorities="osirisc.coastappli.lifecycle-process"
+132-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Justine\.gradle\caches\transforms-2\files-2.1\54bc6b25b90e418ba885581f48acd276\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:25:13-69
+133            android:exported="false"
+133-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Justine\.gradle\caches\transforms-2\files-2.1\54bc6b25b90e418ba885581f48acd276\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:26:13-37
+134            android:multiprocess="true" />
+134-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Justine\.gradle\caches\transforms-2\files-2.1\54bc6b25b90e418ba885581f48acd276\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:27:13-40
+135    </application>
+136
+137</manifest>

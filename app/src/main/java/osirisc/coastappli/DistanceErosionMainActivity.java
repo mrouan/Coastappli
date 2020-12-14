@@ -65,6 +65,7 @@ public class DistanceErosionMainActivity extends AppCompatActivity {
      * @param view
      */
     public void validateDistance(View view){
+        /*
         // We create the new measure
         MeasureErosionDistance measure = new MeasureErosionDistance();
         measure.setMarkerLatitude(markerLatitude);
@@ -87,7 +88,7 @@ public class DistanceErosionMainActivity extends AppCompatActivity {
         // We push the ne measure in the database
         DatabaseAssistant databaseAssistant = new DatabaseAssistant(this);
         databaseAssistant.addDistanceMeasure(measure);
-
+        */
         // We then finish this activity and reload (finish and restart) the previous LocationMainActivity in order to update it with the new data
         DistanceErosionMainActivity.this.finish();
         LocationMainActivity.getInstance().finish();
@@ -102,7 +103,6 @@ public class DistanceErosionMainActivity extends AppCompatActivity {
         myPlaceIntent.putExtra("erosionPhotoCaptureBool", erosionPhotoCaptureBool);
         myPlaceIntent.putExtra("erosionDistanceMeasureBool", erosionDistanceMeasureBool);
         DistanceErosionMainActivity.this.startActivity(myPlaceIntent);
-
     }
 
     public Double getMarkerLatitude() { return markerLatitude; }

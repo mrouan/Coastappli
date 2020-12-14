@@ -100,7 +100,7 @@ public class Marker {
 
     public String getINEC() { return INEC; }
 
-    public int getErosionDistanceMeasureBool() { return erosionMeasurePhotoCapture; }
+    public int getErosionDistanceMeasureBool() { return erosionMeasureDistance; }
 
     public int getErosionMeasurePhotoCapture() { return erosionMeasurePhotoCapture;}
 

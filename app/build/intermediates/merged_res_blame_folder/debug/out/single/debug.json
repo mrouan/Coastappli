@@ -56,6 +56,10 @@
         "source": "D:\\Documents\\Android\\Coastappli-master\\app\\src\\main\\res\\layout\\location_main_activity.xml"
     },
     {
+        "merged": "D:\\Documents\\Android\\Coastappli-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_tab_method_distance_erosion.xml.flat",
+        "source": "D:\\Documents\\Android\\Coastappli-master\\app\\src\\main\\res\\layout\\tab_method_distance_erosion.xml"
+    },
+    {
         "merged": "D:\\Documents\\Android\\Coastappli-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_coast_round_name.png.flat",
         "source": "D:\\Documents\\Android\\Coastappli-master\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_coast_round_name.png"
     },
@@ -64,12 +68,12 @@
         "source": "D:\\Documents\\Android\\Coastappli-master\\app\\src\\main\\res\\drawable\\side_nav_bar.xml"
     },
     {
-        "merged": "D:\\Documents\\Android\\Coastappli-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_tab_method_distance_erosion.xml.flat",
-        "source": "D:\\Documents\\Android\\Coastappli-master\\app\\src\\main\\res\\layout\\tab_method_distance_erosion.xml"
-    },
-    {
         "merged": "D:\\Documents\\Android\\Coastappli-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_tab_indicators.xml.flat",
         "source": "D:\\Documents\\Android\\Coastappli-master\\app\\src\\main\\res\\layout\\tab_indicators.xml"
+    },
+    {
+        "merged": "D:\\Documents\\Android\\Coastappli-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_login.xml.flat",
+        "source": "D:\\Documents\\Android\\Coastappli-master\\app\\src\\main\\res\\layout\\activity_login.xml"
     },
     {
         "merged": "D:\\Documents\\Android\\Coastappli-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_silver_medal.png.flat",
@@ -80,12 +84,20 @@
         "source": "D:\\Documents\\Android\\Coastappli-master\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_coast.png"
     },
     {
+        "merged": "D:\\Documents\\Android\\Coastappli-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_home.xml.flat",
+        "source": "D:\\Documents\\Android\\Coastappli-master\\app\\src\\main\\res\\layout\\activity_home.xml"
+    },
+    {
         "merged": "D:\\Documents\\Android\\Coastappli-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_tab_information.xml.flat",
         "source": "D:\\Documents\\Android\\Coastappli-master\\app\\src\\main\\res\\layout\\tab_information.xml"
     },
     {
         "merged": "D:\\Documents\\Android\\Coastappli-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_log_out.xml.flat",
         "source": "D:\\Documents\\Android\\Coastappli-master\\app\\src\\main\\res\\layout\\fragment_log_out.xml"
+    },
+    {
+        "merged": "D:\\Documents\\Android\\Coastappli-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_reset_password.xml.flat",
+        "source": "D:\\Documents\\Android\\Coastappli-master\\app\\src\\main\\res\\layout\\reset_password.xml"
     },
     {
         "merged": "D:\\Documents\\Android\\Coastappli-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_custom_marker.png.flat",
@@ -116,6 +128,14 @@
         "source": "D:\\Documents\\Android\\Coastappli-master\\app\\src\\main\\res\\drawable-v24\\ic_camera.png"
     },
     {
+        "merged": "D:\\Documents\\Android\\Coastappli-master\\app\\build\\intermediates\\res\\merged\\debug\\color_borderless_button.xml.flat",
+        "source": "D:\\Documents\\Android\\Coastappli-master\\app\\src\\main\\res\\color\\borderless_button.xml"
+    },
+    {
+        "merged": "D:\\Documents\\Android\\Coastappli-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_dialog_progress.xml.flat",
+        "source": "D:\\Documents\\Android\\Coastappli-master\\app\\src\\main\\res\\layout\\dialog_progress.xml"
+    },
+    {
         "merged": "D:\\Documents\\Android\\Coastappli-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_button_indicators_background.xml.flat",
         "source": "D:\\Documents\\Android\\Coastappli-master\\app\\src\\main\\res\\drawable\\button_indicators_background.xml"
     },
@@ -136,8 +156,16 @@
         "source": "D:\\Documents\\Android\\Coastappli-master\\app\\src\\main\\res\\layout\\nav_header_main.xml"
     },
     {
+        "merged": "D:\\Documents\\Android\\Coastappli-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_distance_example.png.flat",
+        "source": "D:\\Documents\\Android\\Coastappli-master\\app\\src\\main\\res\\drawable-v24\\distance_example.png"
+    },
+    {
         "merged": "D:\\Documents\\Android\\Coastappli-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_menu_map.png.flat",
         "source": "D:\\Documents\\Android\\Coastappli-master\\app\\src\\main\\res\\drawable-v24\\ic_menu_map.png"
+    },
+    {
+        "merged": "D:\\Documents\\Android\\Coastappli-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_logo.png.flat",
+        "source": "D:\\Documents\\Android\\Coastappli-master\\app\\src\\main\\res\\drawable\\logo.png"
     },
     {
         "merged": "D:\\Documents\\Android\\Coastappli-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_le_dellec.jpg.flat",
@@ -164,16 +192,20 @@
         "source": "D:\\Documents\\Android\\Coastappli-master\\app\\src\\main\\res\\drawable\\button_background.xml"
     },
     {
+        "merged": "D:\\Documents\\Android\\Coastappli-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_change_password.xml.flat",
+        "source": "D:\\Documents\\Android\\Coastappli-master\\app\\src\\main\\res\\layout\\change_password.xml"
+    },
+    {
         "merged": "D:\\Documents\\Android\\Coastappli-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_tab_input_distance_erosion.xml.flat",
         "source": "D:\\Documents\\Android\\Coastappli-master\\app\\src\\main\\res\\layout\\tab_input_distance_erosion.xml"
     },
     {
-        "merged": "D:\\Documents\\Android\\Coastappli-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_badges.xml.flat",
-        "source": "D:\\Documents\\Android\\Coastappli-master\\app\\src\\main\\res\\layout\\fragment_badges.xml"
-    },
-    {
         "merged": "D:\\Documents\\Android\\Coastappli-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_menu_log_out.png.flat",
         "source": "D:\\Documents\\Android\\Coastappli-master\\app\\src\\main\\res\\drawable-v24\\ic_menu_log_out.png"
+    },
+    {
+        "merged": "D:\\Documents\\Android\\Coastappli-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_badges.xml.flat",
+        "source": "D:\\Documents\\Android\\Coastappli-master\\app\\src\\main\\res\\layout\\fragment_badges.xml"
     },
     {
         "merged": "D:\\Documents\\Android\\Coastappli-master\\app\\build\\intermediates\\res\\merged\\debug\\navigation_mobile_navigation.xml.flat",
@@ -186,6 +218,14 @@
     {
         "merged": "D:\\Documents\\Android\\Coastappli-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_app_bar_main.xml.flat",
         "source": "D:\\Documents\\Android\\Coastappli-master\\app\\src\\main\\res\\layout\\app_bar_main.xml"
+    },
+    {
+        "merged": "D:\\Documents\\Android\\Coastappli-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_register.xml.flat",
+        "source": "D:\\Documents\\Android\\Coastappli-master\\app\\src\\main\\res\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "D:\\Documents\\Android\\Coastappli-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_email_verify.xml.flat",
+        "source": "D:\\Documents\\Android\\Coastappli-master\\app\\src\\main\\res\\layout\\activity_email_verify.xml"
     },
     {
         "merged": "D:\\Documents\\Android\\Coastappli-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_radiobutton_background.xml.flat",

@@ -74,6 +74,7 @@ public class PhotoCaptureErosionMainActivity extends AppCompatActivity {
             coastType = extras.getString("coastType");
             INEC = extras.getString("INEC");
             erosionPhotoCaptureBool = extras.getInt("erosionPhotoCaptureBool");
+            erosionDistanceMeasureBool = extras.getInt("erosionDistanceMeasureBool");
         }
     }
 

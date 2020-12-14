@@ -1,22 +1,35 @@
 osirisc/coastappli/SplashScreen.java
  osirisc.coastappli.SplashScreen
  osirisc.coastappli.SplashScreen$1
-osirisc/coastappli/ui/badges/BadgesViewModel.java
- osirisc.coastappli.ui.badges.BadgesViewModel
+osirisc/coastappli/distanceErosion/TabInputFragment.java
+ osirisc.coastappli.distanceErosion.TabInputFragment
+ osirisc.coastappli.distanceErosion.TabInputFragment$1
+ osirisc.coastappli.distanceErosion.TabInputFragment$1$1
+ osirisc.coastappli.distanceErosion.TabInputFragment$2
+ osirisc.coastappli.distanceErosion.TabInputFragment$2$1
 osirisc/coastappli/location/TabInformationFragment.java
  osirisc.coastappli.location.TabInformationFragment
  osirisc.coastappli.location.TabInformationFragment$1
+osirisc/coastappli/helper/SessionManager.java
+ osirisc.coastappli.helper.SessionManager
 osirisc/coastappli/location/SectionsPagerAdapterLocation.java
  osirisc.coastappli.location.SectionsPagerAdapterLocation
-osirisc/coastappli/ui/badges/BadgesFragment.java
- osirisc.coastappli.ui.badges.BadgesFragment
- osirisc.coastappli.ui.badges.BadgesFragment$1
-osirisc/coastappli/Database/MeasureErosionDistance.java
- osirisc.coastappli.Database.MeasureErosionDistance
 osirisc/coastappli/ui/profile/ProfileViewModel.java
  osirisc.coastappli.ui.profile.ProfileViewModel
+osirisc/coastappli/widget/ProgressBarDialog.java
+ osirisc.coastappli.widget.ProgressBarDialog
+osirisc/coastappli/photoCaptureErosion/TabInputFragment.java
+ osirisc.coastappli.photoCaptureErosion.TabInputFragment
+ osirisc.coastappli.photoCaptureErosion.TabInputFragment$1
+osirisc/coastappli/ui/badges/BadgesViewModel.java
+ osirisc.coastappli.ui.badges.BadgesViewModel
 osirisc/coastappli/ui/log_out/LogOutViewModel.java
  osirisc.coastappli.ui.log_out.LogOutViewModel
+osirisc/coastappli/RegisterActivity.java
+ osirisc.coastappli.RegisterActivity
+ osirisc.coastappli.RegisterActivity$1
+osirisc/coastappli/MyApplication.java
+ osirisc.coastappli.MyApplication
 osirisc/coastappli/ui/history/HistoryFragment.java
  osirisc.coastappli.ui.history.HistoryFragment
  osirisc.coastappli.ui.history.HistoryFragment$1
@@ -31,23 +44,36 @@ osirisc/coastappli/Database/MethodErosionPhotoCapture.java
  osirisc.coastappli.Database.MethodErosionPhotoCapture
 osirisc/coastappli/Database/MethodErosionDistance.java
  osirisc.coastappli.Database.MethodErosionDistance
-osirisc/coastappli/distanceErosion/TabInputFragment.java
- osirisc.coastappli.distanceErosion.TabInputFragment
- osirisc.coastappli.distanceErosion.TabInputFragment$1
- osirisc.coastappli.distanceErosion.TabInputFragment$1$1
- osirisc.coastappli.distanceErosion.TabInputFragment$2
- osirisc.coastappli.distanceErosion.TabInputFragment$2$1
+osirisc/coastappli/LoginActivity.java
+ osirisc.coastappli.LoginActivity
+ osirisc.coastappli.LoginActivity$1
+ osirisc.coastappli.LoginActivity$2
+ osirisc.coastappli.LoginActivity$3
+osirisc/coastappli/Database/MeasureErosionDistance.java
+ osirisc.coastappli.Database.MeasureErosionDistance
+osirisc/coastappli/EmailVerify.java
+ osirisc.coastappli.EmailVerify
+ osirisc.coastappli.EmailVerify$1
+ osirisc.coastappli.EmailVerify$2
+ osirisc.coastappli.EmailVerify$3
 osirisc/coastappli/ui/manage/ManageFragment.java
  osirisc.coastappli.ui.manage.ManageFragment
  osirisc.coastappli.ui.manage.ManageFragment$1
-osirisc/coastappli/photoCaptureErosion/TabInputFragment.java
- osirisc.coastappli.photoCaptureErosion.TabInputFragment
- osirisc.coastappli.photoCaptureErosion.TabInputFragment$1
+osirisc/coastappli/HomeActivity.java
+ osirisc.coastappli.HomeActivity
+ osirisc.coastappli.HomeActivity$1
+ osirisc.coastappli.HomeActivity$2
+ osirisc.coastappli.HomeActivity$3
+osirisc/coastappli/ui/badges/BadgesFragment.java
+ osirisc.coastappli.ui.badges.BadgesFragment
+ osirisc.coastappli.ui.badges.BadgesFragment$1
 osirisc/coastappli/ui/profile/ProfileFragment.java
  osirisc.coastappli.ui.profile.ProfileFragment
  osirisc.coastappli.ui.profile.ProfileFragment$1
 osirisc/coastappli/ui/history/HistoryViewModel.java
  osirisc.coastappli.ui.history.HistoryViewModel
+osirisc/coastappli/helper/DatabaseHandler.java
+ osirisc.coastappli.helper.DatabaseHandler
 osirisc/coastappli/Database/MeasureErosionPhotoCapture.java
  osirisc.coastappli.Database.MeasureErosionPhotoCapture
 osirisc/coastappli/photoCaptureErosion/SectionsPagerAdapterPhotoCaptureErosion.java
@@ -56,6 +82,8 @@ osirisc/coastappli/BuildConfig.java
  osirisc.coastappli.BuildConfig
 osirisc/coastappli/Database/Marker.java
  osirisc.coastappli.Database.Marker
+osirisc/coastappli/helper/Functions.java
+ osirisc.coastappli.helper.Functions
 osirisc/coastappli/location/TabIndicatorsFragment.java
  osirisc.coastappli.location.TabIndicatorsFragment
  osirisc.coastappli.location.TabIndicatorsFragment$1
