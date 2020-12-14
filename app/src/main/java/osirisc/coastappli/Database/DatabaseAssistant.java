@@ -50,21 +50,24 @@ public class DatabaseAssistant extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db){
-        //We create all 3 databases described above
+        //We create all 5 databases described above
         db.execSQL("CREATE TABLE Marker (_id INTEGER PRIMARY KEY AUTOINCREMENT, latitude DOUBLE, longitude DOUBLE, namebeach TEXT, nameTown TEXT, coastType TEXT, INEC TEXT, erosionPhotoCaptureMeasure BOOL, erosionDistanceMeasure BOOL,  photo BLOB);");
         db.execSQL("CREATE TABLE MesureErosionDistance (_id INTEGER PRIMARY KEY AUTOINCREMENT, markerLatitude DOUBLE, markerLongitude DOUBLE, date DATE, time DATE, user TEXT, note TEXT, photo BLOB);");
         db.execSQL("CREATE TABLE MethodErosionDistance (_id INTEGER PRIMARY KEY AUTOINCREMENT, markerLatitude DOUBLE, markerLongitude DOUBLE, photo BLOB, photoPerson BLOB, clue1 TEXT, clue2 TEXT, clue3 TEXT);");
         db.execSQL("CREATE TABLE DistanceMeasure (_id INTEGER PRIMARY KEY AUTOINCREMENT, markerLatitue DOUBLE, markerLongitute DOUBLE, date DATE, time DATE, user TEXT, distance DOUBLE);");
         db.execSQL("CREATE TABLE DistanceMethod (_id INTEGER PRIMARY KEY AUTOINCREMENT, markerLatitude DOUBLE, markerLongitude DOUBLE, photo BLOB);");
 
+
         //We get the bite array out of a picture of our first marker's location
         ByteArrayOutputStream stream = new ByteArrayOutputStream();
         ((BitmapDrawable)ContextCompat.getDrawable(getApplicationContext(), R.drawable.le_dellec)).getBitmap().compress(Bitmap.CompressFormat.PNG, 100, stream);
         byte[] byteArray = stream.toByteArray();
         //We now create this marker
+
         Marker marker = new Marker(48.3549,-4.5671,  "Le Dellec", "Plouzané", "Type de côte", "INEC", 1, 1, byteArray);
         //We can create as many markers as we want :
         Marker marker1 = new Marker(47.3549, -5.671, "Test2", "Test2", "Test2", "Test2", 0,0);
+
         //And we add them to the marker table
         addInitMarker(marker, db);
         addInitMarker(marker1, db);
@@ -184,7 +187,9 @@ public class DatabaseAssistant extends SQLiteOpenHelper {
         values.put("nameTown", marker.getNameTown());
         values.put("coastType", marker.getCoastType());
         values.put("INEC", marker.getINEC());
-        values.put("erosionDistanceMeasure", marker.getErosionDistanceMeasureBool());
+        values.put("erosionPhotoCaptureMeasure", marker.getErosionMeasurePhotoCapture());
+        values.put("erosionDistanceMeasure", marker.getErosionDistanceMesureBool());
+
         values.put("photo", marker.getPhoto());
         SQLiteDatabase db = this.getWritableDatabase();
         //We then add this marker to the database
@@ -556,4 +561,5 @@ public class DatabaseAssistant extends SQLiteOpenHelper {
         db.close();
         return method;
     }
+
 }

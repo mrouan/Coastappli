@@ -30,7 +30,7 @@ public class Marker {
     // This attribute is an int equal to 0 or 1. If equal to 1, the marker uses the measure of the photo capture for the erosion.
     // If equal to 0; it doesn't use it. Perhaps a better system could be implemented.
     private int erosionMeasurePhotoCapture = 1;
-    //Idem forr the distance measurement.
+    //Idem for the distance measurement.
     private int erosionMeasureDistance = 1;
     private byte[] photo;
 
