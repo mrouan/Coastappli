@@ -1,6 +1,8 @@
 ﻿# CoastAppli
 
-The CoastAppli project is included in the project [OSIRISC](https://www-iuem.univ-brest.fr/pops/projects/osirisc-vers-un-observatoire-integre-des-risques-cotiers-d-erosion-submersion). OSIRISC aims to create a scientific observatory of coastal risks. The CoastAppli app is, thus, a tool to the construction of this observatory, and it will help the monitoring of coastal hazards. Indeed, every user can use this participatory sciences app and register their observations of the coast to ease the work of coastal managers.
+Coastappli is a project started in 2019 for a duration of 3 years that aims to create a participatory sciences app to monitor coastal hazards (erosion, submersion, etc.). This project is built thanks to student formations involving teams of researchers, students in "Master EGEL"([IUEM](https://www-iuem.univ-brest.fr/), [UBO](https://www.univ-brest.fr/)) and engineers-students ([IMT Atlantique](https://www.imt-atlantique.fr/fr)).
+
+The CoastAppli project is included in the project [OSIRISC](https://www-iuem.univ-brest.fr/pops/projects/osirisc-vers-un-observatoire-integre-des-risques-cotiers-d-erosion-submersion) with the goal to provide a free smartphone app to register coastal indicators (beach profile, submersion height, etc.). Thanks to these data collected at different times of the year, it will be possible to figure out the evolution of the coast and to better understand this changing environment. The accessibility of this app also aims to draw the public awareness to scientific procedures and to coastal hazards by putting the coast's dynamic behavior center stage.
 
 
 ## Getting Started
