@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/hauteurinputtitle"
+                android:layout_width="350dp"
+                android:layout_height="91dp"
+                android:layout_marginEnd="28dp"
+                android:text="Méthode 1 si vous possédez un metre ruban"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:translationX="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:layout_editor_absoluteY="99dp" />
+
+            <TextView
+                android:id="@+id/hauteurinputvalue"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Entrez la hauteur  de l'érosion en centimètre"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:translationX="25dp"
+                tools:layout_editor_absoluteX="46dp"
+                tools:layout_editor_absoluteY="184dp" />
+
+            <EditText
+                android:id="@+id/enterhauteurinput"
+                android:layout_width="251dp"
+                android:layout_height="56dp"
+                android:ems="10"
+                android:inputType="number"
+                android:translationX="25dp"
+                tools:layout_editor_absoluteX="46dp"
+                tools:layout_editor_absoluteY="228dp" />
+
+            <Button
+                android:id="@+id/enterhauteurvaluebutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Entrer"
+                android:translationX="25dp"
+                tools:layout_editor_absoluteX="46dp"
+                tools:layout_editor_absoluteY="292dp" />
+
+            <TextView
+                android:id="@+id/hauteurinputtitle2"
+                android:layout_width="350dp"
+                android:layout_height="91dp"
+                android:layout_marginEnd="28dp"
+                android:text="Méthode 2 si vous êtes accompagné"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:translationX="25dp"
+                android:translationY="50dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:layout_editor_absoluteY="99dp" />
+
+            <TextView
+                android:id="@+id/hauteurinputvalue2"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Prenez une photo"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:translationX="25dp"
+                android:translationY="50dp"
+                tools:layout_editor_absoluteX="46dp"
+                tools:layout_editor_absoluteY="184dp" />
+
+            <Button
+                android:id="@+id/buttonPhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background"
+                android:onClick="takePhoto"
+                android:text="@string/take_photo"
+                android:textColor="#FFFFFF"
+                android:translationX="25dp"
+                android:translationY="50dp" />
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

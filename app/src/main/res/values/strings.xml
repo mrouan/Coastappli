@@ -1,0 +1,122 @@
+<resources>
+    <string name="app_name">Coastappli</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Coastappli</string>
+    <string name="nav_header_subtitle">Osirisc</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="user_localisation_permission_not_granted">The localisation is not granted.</string>
+    <string name="user_localisation_permission_explanation">The localisation is impossible.</string>
+
+    <string name="menu_log_in">Connexion</string>
+    <string name="menu_carte">Map</string>
+    <string name="menu_history">History</string>
+    <string name="menu_badges">Badges</string>
+    <string name="menu_manage">Manage</string>
+    <string name="menu_log_out">Log out</string>
+    <string name="menu_profile">Profile</string>
+
+    <string name="tab_information_name">Information</string>
+    <string name="tab_trace_name">Trace</string>
+    <string name="tab_indicators_name">Indicators</string>
+    <string name="tab_input_name">Input</string>
+    <string name="tab_method_name">Method</string>
+
+    <string name="news">News :</string>
+    <string name="tides">Tides :</string>
+    <string name="coastType">Coast type :</string>
+    <string name="INEC">INEC :</string>
+
+
+    <string name="erosion">Erosion</string>
+    <string name="submersion">Submersion</string>
+
+    <string name="date">Date and time :</string>
+    <string name="photo">Photo capture</string>
+    <string name="indicateur_erosion_2">Distance measurement</string>
+    <string name="indicateur_erosion_3">Height measurement</string>
+    <string name="indicateur_submersion_1">indicator_submersion_1</string>
+    <string name="indicateur_submersion_2">indicator_submersion_2</string>
+    <string name="indicateur_submersion_3">indicator_submersion_3</string>
+
+    <string name="take_photo">Take photo</string>
+    <string name="distance_choice">Choose a measurement tool</string>
+    <string name="metre_use">Metre use</string>
+    <string name="step_use">\"Step factor\" use</string>
+    <string name="distance_measured">Distance measured:</string>
+    <string name="step_measured">Number of steps measured:</string>
+    <string name="steps">steps</string>
+    <string name="validate">Validate</string>
+    <string name="measureErosionPhoto">Erosion - Photo capture</string>
+    <string name="measureErosion2">Measure Erosion 2</string>
+    <string name="measureErosion3">Measure Erosion 3</string>
+    <string name="measureSubmersion1">Measure Submersion 1</string>
+    <string name="measureSubmersion2">Measure Submersion 2</string>
+    <string name="measureSubmersion3">Measure Submersion 3</string>
+
+    <string name="user">User :</string>
+    <string name="measure">Measure :</string>
+    <string name="notes">Notes :</string>
+
+    <string name="erosionDistance">Constrained and qualitative photo capture </string>
+    <string name="erosionSurface">Coastline distance measurement</string>
+    <string name="erosionVolume">Not yet implementedé</string>
+    <string name="submersionHauteur">Not yet implemented</string>
+    <string name="submersionMigration">Not yet implemented</string>
+    <string name="submersionPaquets">Not yet implemented</string>
+
+    <string name="methodDistanceTitle">Constrained and qualitative \n photo capture </string>
+    <string name="methodDistanceGoalTitle">What is the goal?</string>
+    <string name="methodDistanceGoalMessage">→ photograph the coastline in order to better apprehend its evolution as photos are sent</string>
+    <string name="methodDistanceHowTitle">How to take the measure?</string>
+    <string name="methodDistanceHowMessage">→ tools : camera</string>
+    <string name="methodDistanceWhenTitle">When to do this task?</string>
+    <string name="methodDistanceWhenMessage">→ duration : 5 minutes\n→ to do as the tide is low</string>
+    <string name="methodDistance2">- Photo desired:</string>
+    <string name="methodDistance3">- Advised position to take the photo:</string>
+    <string name="methodDistance4">In order to better apprehend fast evolution\n due to storms, it\'s also relevant to take \nphotos post-event.</string>
+
+    <string name="methodClue1">Clue 1:</string>
+    <string name="methodClue2">Clue 2:</string>
+    <string name="methodClue3">Clue 3:</string>
+
+    <string name="methodDistanceMeasureTitle">Coastline distance measurement</string>
+    <string name="methodDistanceMeasureGoalTitle">What is the goal?</string>
+    <string name="methodDistanceMeasureGoalMessage">→ measure the distance between two points in order to better apprehend the evolution of the coastline.</string>
+    <string name="methodDistanceMeasureHowTitle">How to take the measure?</string>
+    <string name="methodDistanceMeasureHowMessage">→ tools: metre or "step factor"</string>
+    <string name="methodDistanceMeasureWhenTitle">When to do this task?</string>
+    <string name="methodDistanceMeasureWhenMessage">→ duration: 7 minutes\n → to do as the tide is low</string>
+    <string name="methodDistanceMeasureMetre">Metre is use</string>
+    <string name="methodDistanceMeasureMetreExplanation">Measure the distance between the two points (see picture below) and register it in the "input" section.</string>
+    <string name="methodDistanceMeasureStep">\"Step factor\"\'s use</string>
+    <string name="methodDistanceMeasureStepExplanation">→ First make to have registered your \"step factor\" in your profile. \n Then, count the number of steps you make between the tow points (see picture below) and register it in the \"input\" section.</string>
+    <string name="methodHeightMeasureStep">A gauge is used</string>
+    <string name="MethodHauteurmeasureTitle">Measurement of the height of erosion"</string>
+    <string name="Definitionoftheheightmeasure">This measurement makes it possible to know the height of the erosion."</string>
+    <string name="methodHeightMeasureHowMessage">Tools: Meter or gauge if the person is accompanied"</string>
+    <string name="HeightMeasureExplanation">Enter the height of the person placed on the photograph (standard), right next to the entity to be measured (the operator must take the photo from the front) →la height of the erosion is calculated by a system of rulers"</string>
+    <string name="HeightMeasureTitle">Height Measurement</string>
+
+    <string name="notImplemented">Not yet implemented</string>
+
+    <string name="information">Information</string>
+
+    <string name="traceTitle">Here are the last measures taken in this location</string>
+    <string name="indicatorsErosionTitle">Here are the different erosion measures that \ncan be taken in this location</string>
+    <string name="indicatorsSubmersionTitle">Here are the different submersion measures that \ncan be taken in this location</string>
+
+    <string name="cameraIcon">The camera is needed</string>
+    <string name="locationIcon">A metre is required. Otherwise, use your "step factor".</string>
+    <string name="meterIcon">A metre is required. Otherwise you can use a a stud.</string>
+    <string name="bronzeMedalIcon">Easy level</string>
+    <string name="silverMedalIcon">Intermediate level</string>
+    <string name="goldMedalIcon">Difficult level</string>
+    <string name="questionIconPhotoCapture">Goal : Photograph the coastline in order to \nbetter apprehend its evolution as photos are sent\n\nDuration : 5 minutes</string>
+    <string name="questionIconDistance">Goal : Measure the distance between two points \n in order to better apprehend the evolution of the coastline.\n\nDuration : 7 minutes</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>
