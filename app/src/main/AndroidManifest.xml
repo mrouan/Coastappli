@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="osirisc.coastappli">
+
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />  <!--necessary to use OpenStreetMap-->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -10,14 +11,22 @@
 
 
     <application
-        android:fullBackupContent="true"
         android:allowBackup="false"
+        android:fullBackupContent="true"
         android:fullBackupOnly="false"
         android:icon="@mipmap/ic_launcher_coast"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_coast_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".Mainactivityhauteur"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+         </activity>
+
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
@@ -29,7 +38,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
 
         <activity
             android:name=".SplashScreen"
@@ -44,6 +52,7 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
+
         <activity
             android:name=".LoginActivity"
             android:label="@string/app_name">
@@ -79,10 +88,12 @@
                 android:value=".LoginActivity" />
         </activity>
 
+
         <activity
             android:name=".PhotoCaptureErosionMainActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
+
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
 
@@ -104,7 +115,5 @@
         </provider>
 
     </application>
-
-
 
 </manifest>

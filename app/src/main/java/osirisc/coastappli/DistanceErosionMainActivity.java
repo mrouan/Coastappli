@@ -6,17 +6,37 @@ import android.view.View;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import android.graphics.Bitmap;
+
+import android.graphics.BitmapFactory;
+import android.net.Uri;
+import android.os.Bundle;
+import android.os.Environment;
+import android.provider.MediaStore;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.FileProvider;
 import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.tabs.TabLayout;
 
+import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
 import osirisc.coastappli.Database.DatabaseAssistant;
 import osirisc.coastappli.Database.MeasureErosionDistance;
+import osirisc.coastappli.Database.MethodErosionDistance;
 import osirisc.coastappli.distanceErosion.SectionsPagerAdapterDistanceErosion;
+import static android.view.View.VISIBLE;
 
 public class DistanceErosionMainActivity extends AppCompatActivity {
 
@@ -29,7 +49,6 @@ public class DistanceErosionMainActivity extends AppCompatActivity {
     private String INEC;
     private int erosionPhotoCaptureBool;
     private int erosionDistanceMeasureBool;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

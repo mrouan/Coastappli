@@ -138,6 +138,7 @@ public class PhotoCaptureErosionMainActivity extends AppCompatActivity {
      */
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         // If a photo was taken
+        super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == 1 && resultCode == RESULT_OK) {
 
             // The validate button and the notes appear (they were previously in GONE mode)
@@ -161,7 +162,7 @@ public class PhotoCaptureErosionMainActivity extends AppCompatActivity {
             int photoH = bmOptions.outHeight;
 
             // We determine how much to scale down the image
-            int scaleFactor = Math.min(photoW/targetW, photoH/targetH);
+            int scaleFactor = Math.min(photoW / targetW, photoH / targetH);
 
             // We decode the image file into a Bitmap sized to fill the View
             bmOptions.inJustDecodeBounds = false;

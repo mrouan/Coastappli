@@ -166,6 +166,7 @@
                 app:srcCompat="@drawable/ic_metre" />
 
             <LinearLayout
+                android:id="@+id/erosionHauteurLayout"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
@@ -191,7 +192,9 @@
                     android:layout_marginRight="10dp"
                     android:background="@drawable/button_indicators_background"
                     android:text="Height measurement"
-                    android:textColor="@color/colorPrimary" />
+                    android:textColor="@color/colorPrimary"
+                    android:onClick="HauteurFunction"
+                    />
 
                 <ImageView
                     android:id="@+id/imageViewQuestionIcon3"

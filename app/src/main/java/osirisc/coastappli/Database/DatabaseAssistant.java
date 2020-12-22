@@ -24,6 +24,7 @@ import static com.mapbox.mapboxsdk.Mapbox.getApplicationContext;
  */
 
 public class DatabaseAssistant extends SQLiteOpenHelper {
+    private static final String TAG="Databasehelper";
     private static final int DATABASE_VERSION = 1;
     private static final String DATABASE_NAME = "CoastappliDB.db";
 
@@ -56,6 +57,7 @@ public class DatabaseAssistant extends SQLiteOpenHelper {
         db.execSQL("CREATE TABLE MethodErosionDistance (_id INTEGER PRIMARY KEY AUTOINCREMENT, markerLatitude DOUBLE, markerLongitude DOUBLE, photo BLOB, photoPerson BLOB, clue1 TEXT, clue2 TEXT, clue3 TEXT);");
         db.execSQL("CREATE TABLE DistanceMeasure (_id INTEGER PRIMARY KEY AUTOINCREMENT, markerLatitue DOUBLE, markerLongitute DOUBLE, date DATE, time DATE, user TEXT, distance DOUBLE);");
         db.execSQL("CREATE TABLE DistanceMethod (_id INTEGER PRIMARY KEY AUTOINCREMENT, markerLatitude DOUBLE, markerLongitude DOUBLE, photo BLOB);");
+
 
 
         //We get the bite array out of a picture of our first marker's location
@@ -193,7 +195,6 @@ public class DatabaseAssistant extends SQLiteOpenHelper {
         values.put("INEC", marker.getINEC());
         values.put("erosionPhotoCaptureMeasure", marker.getErosionMeasurePhotoCapture());
         values.put("erosionDistanceMeasure", marker.getErosionDistanceMeasureBool());
-
         values.put("photo", marker.getPhoto());
         SQLiteDatabase db = this.getWritableDatabase();
         //We then add this marker to the database

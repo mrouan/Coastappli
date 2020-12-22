@@ -13,6 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.util.DisplayMetrics;
 import android.view.View;
+import android.widget.Button;
 
 import osirisc.coastappli.Database.DatabaseAssistant;
 import osirisc.coastappli.Database.Marker;
@@ -36,6 +37,8 @@ public class LocationMainActivity extends AppCompatActivity {
     private String INEC;
     private int erosionPhotoCaptureBool;
     private int erosionDistanceMeasureBool;
+    private int erosionHauteurMeasureBool;
+
 
     // This is the width of the screen, used to adapt to layout for all screen sizes
     private int width;
@@ -64,6 +67,7 @@ public class LocationMainActivity extends AppCompatActivity {
             INEC = extras.getString("INEC");
             erosionPhotoCaptureBool = extras.getInt("erosionPhotoCaptureBool");
             erosionDistanceMeasureBool = extras.getInt("erosionDistanceMeasureBool");
+            erosionHauteurMeasureBool = extras.getInt("erosionHauteurMeasureBool");
         }
 
         // We recover the width of the screen
@@ -137,6 +141,16 @@ public class LocationMainActivity extends AppCompatActivity {
         LocationMainActivity.this.startActivity(myIntent);
     }
 
+    public void HauteurFunction(View view){
+        Intent myIntent= new Intent(this, Mainactivityhauteur.class);
+        myIntent.putExtra("markerLatitude", markerLatitude);
+        myIntent.putExtra("markerLongitude", markerLongitude);
+        myIntent.putExtra("nameBeach", nameBeach);
+        myIntent.putExtra("nameTown", nameTown);
+        myIntent.putExtra("coastType", coastType);
+        myIntent.putExtra("INEC", INEC);
+        myIntent.putExtra("erosionPhotoCaptureBool", erosionPhotoCaptureBool);
+        LocationMainActivity.this.startActivity(myIntent);}
     /**
      * Function launched when the button "distance measurement" in erosion in the indicators' fragment is clicked on
      * It starts the new activity with all the info to measure the right distance

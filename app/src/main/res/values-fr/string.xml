@@ -93,7 +93,12 @@
     <string name="methodDistanceMeasureMetreExplanation">Mesurer la distance entre les deux points (voir photo ci-dessous) et l\'enregistrer dans l\'onglet \"input\".</string>
     <string name="methodDistanceMeasureStep">Utilisation du \"coefficient de pas\"</string>
     <string name="methodDistanceMeasureStepExplanation">→ Tout d\'abord, s\'assurer d\'avoir enregistré son\ "coefficient de pas\" dans l\'onglet \"profil\". \n Ensuite, compter le nombre de pas faits entre les deux points (voir photo ci-dessous) et l\'enregistrer dans l\'onglet \"input\".</string>
-
+    <string name="methodHeightMeasureStep">Utilisation d\'un étalon</string>
+    <string name="MethodHauteurmeasureTitle">Mesure de la hauteur de l\'érosion"</string>
+    <string name="Definitionoftheheightmeasure">Cette mesure permet de connaître la hauteur de l\'érosion"</string>
+    <string name="methodHeightMeasureHowMessage">Outils : Metre ou étalon si la personne est accompagnée"</string>
+    <string name="HeightMeasureExplanation">Rentrer la hauteur de la personne placée sur la photographie (étalon), juste à côte de l’entité à mesurer (l’opérateur doit prendre la photo de face) →la hauteur de l\'érosion est calculée par un système de réglettes"</string>
+    <string name="HeightMeasureTitle">Mesure de la hauteur</string>
 
     <string name="notImplemented">A implémenter</string>
 

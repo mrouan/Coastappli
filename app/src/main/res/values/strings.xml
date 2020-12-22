@@ -92,6 +92,12 @@
     <string name="methodDistanceMeasureMetreExplanation">Measure the distance between the two points (see picture below) and register it in the \"input\" section.</string>
     <string name="methodDistanceMeasureStep">\"Step factor\"\'s use</string>
     <string name="methodDistanceMeasureStepExplanation">→ First make to have registered your \"step factor\" in your profile. \n Then, count the number of steps you make between the tow points (see picture below) and register it in the \"input\" section.</string>
+    <string name="methodHeightMeasureStep">A gauge is used</string>
+    <string name="MethodHauteurmeasureTitle">Measurement of the height of erosion"</string>
+    <string name="Definitionoftheheightmeasure">This measurement makes it possible to know the height of the erosion."</string>
+    <string name="methodHeightMeasureHowMessage">Tools: Meter or gauge if the person is accompanied"</string>
+    <string name="HeightMeasureExplanation">Enter the height of the person placed on the photograph (standard), right next to the entity to be measured (the operator must take the photo from the front) →la height of the erosion is calculated by a system of rulers"</string>
+    <string name="HeightMeasureTitle">Height Measurement</string>
 
     <string name="notImplemented">Not yet implemented</string>
 
