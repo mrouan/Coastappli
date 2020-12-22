@@ -9,8 +9,6 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
 import osirisc.coastappli.R;
-import osirisc.coastappli.photoCaptureErosion.TabInputFragment;
-import osirisc.coastappli.photoCaptureErosion.TabMethodFragment;
 
 public class SectionsPagerAdapterDistanceErosion extends FragmentPagerAdapter {
 
