@@ -57,7 +57,8 @@ public class DatabaseAssistant extends SQLiteOpenHelper {
         db.execSQL("CREATE TABLE MethodErosionDistance (_id INTEGER PRIMARY KEY AUTOINCREMENT, markerLatitude DOUBLE, markerLongitude DOUBLE, photo BLOB, photoPerson BLOB, clue1 TEXT, clue2 TEXT, clue3 TEXT);");
         db.execSQL("CREATE TABLE DistanceMeasure (_id INTEGER PRIMARY KEY AUTOINCREMENT, markerLatitue DOUBLE, markerLongitute DOUBLE, date DATE, time DATE, user TEXT, distance DOUBLE);");
         db.execSQL("CREATE TABLE DistanceMethod (_id INTEGER PRIMARY KEY AUTOINCREMENT, markerLatitude DOUBLE, markerLongitude DOUBLE, photo BLOB);");
-
+        db.execSQL("CREATE TABLE MethodErosionPhotoCapture (_id INTEGER PRIMARY KEY AUTOINCREMENT, markerLatitude DOUBLE, markerLongitude DOUBLE, photo BLOB, photoPerson BLOB, clue1 TEXT, clue2 TEXT, clue3 TEXT);");
+        db.execSQL("CREATE TABLE MeasureErosionPhotoCapture (_id INTEGER PRIMARY KEY AUTOINCREMENT, markerLatitude DOUBLE, markerLongitude DOUBLE, date DATE, time DATE, user TEXT, note TEXT, photo BLOB);");
 
 
         //We get the bite array out of a picture of our first marker's location
@@ -134,7 +135,7 @@ public class DatabaseAssistant extends SQLiteOpenHelper {
             marker.setINEC(cursor.getString(6));
             marker.setErosionMeasurePhotoCapture(Integer.parseInt(cursor.getString(7)));
             //marker.setErosionMeasureDistance(Integer.parseInt(cursor.getString(8)));
-            marker.setPhoto(cursor.getBlob(8));
+            marker.setPhoto(cursor.getBlob(9));
             listMarker.add(marker);
         }
         cursor.close();
@@ -167,7 +168,7 @@ public class DatabaseAssistant extends SQLiteOpenHelper {
             marker.setINEC(cursor.getString(6));
             marker.setErosionMeasurePhotoCapture(Integer.parseInt(cursor.getString(7)));
             //marker.setErosionMeasureDistance(Integer.parseInt(cursor.getString(8)));
-            marker.setPhoto(cursor.getBlob(8));
+            marker.setPhoto(cursor.getBlob(9));
             cursor.close();
         //If query is empty, there's no corresponding marker so we set i to null
         } else {
